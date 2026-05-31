@@ -1,0 +1,38 @@
+{
+    "description": "BMS data layers for Paris demo — uses global OurAirports CSV and navaids covering France/Western Europe.",
+    "location": "paris",
+    "version": "1.0.0",
+    "basePath": "",
+    "dataLayers": [
+        {
+            "layerName": "Airports (Global)",
+            "layerType": "airports",
+            "file": "data/aviation/airports.csv",
+            "format": "csv",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 10,
+            "description": "Global OurAirports database — includes CDG, ORY, LBG and all French aerodromes"
+        },
+        {
+            "layerName": "Airport Frequencies",
+            "layerType": "frequencies",
+            "file": "data/aviation/airport-frequencies.csv",
+            "format": "csv",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 11,
+            "description": "Global airport radio frequencies from OurAirports"
+        },
+        {
+            "layerName": "Navigation Aids (Global)",
+            "layerType": "navaids",
+            "file": "data/aviation/navaids.csv",
+            "format": "csv",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 12,
+            "description": "Global VOR, NDB, DME navigation aids from OurAirports — covers French NAVAID network"
+        }
+    ]
+}

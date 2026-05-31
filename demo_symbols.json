@@ -1,0 +1,79 @@
+{
+    "description": "Demo military symbols for Paris / CDG Airport area",
+    "location": "paris",
+    "centerLatitude": 49.0097,
+    "centerLongitude": 2.5479,
+    "defaultZoom": 10,
+    "symbols": [
+        {
+            "id": "paris-hq-001",
+            "sidc": "SFGPUCI--------",
+            "name": "COMD PARIS",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "altitude": 119,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "paris-inf-001",
+            "sidc": "SFGPUCIZ-------",
+            "name": "1 BCA",
+            "latitude": 49.060,
+            "longitude": 2.490,
+            "altitude": 105,
+            "bearing": 135,
+            "speed": 0
+        },
+        {
+            "id": "paris-inf-002",
+            "sidc": "SFGPUCIZ-------",
+            "name": "2 BCA",
+            "latitude": 48.970,
+            "longitude": 2.610,
+            "altitude": 95,
+            "bearing": 225,
+            "speed": 0
+        },
+        {
+            "id": "paris-armor-001",
+            "sidc": "SFGPUCAA-------",
+            "name": "501 RCC",
+            "latitude": 49.030,
+            "longitude": 2.420,
+            "altitude": 110,
+            "bearing": 270,
+            "speed": 8
+        },
+        {
+            "id": "paris-air-001",
+            "sidc": "SFAPMFF--------",
+            "name": "RAFALE 1",
+            "latitude": 49.080,
+            "longitude": 2.530,
+            "altitude": 5000,
+            "bearing": 200,
+            "speed": 500
+        },
+        {
+            "id": "paris-air-002",
+            "sidc": "SFAPMFH--------",
+            "name": "TIGRE 1",
+            "latitude": 49.020,
+            "longitude": 2.560,
+            "altitude": 400,
+            "bearing": 45,
+            "speed": 140
+        },
+        {
+            "id": "paris-hostile-001",
+            "sidc": "SHGPUCIZ-------",
+            "name": "HOSTILE UNIT",
+            "latitude": 48.940,
+            "longitude": 2.650,
+            "altitude": 80,
+            "bearing": 290,
+            "speed": 4
+        }
+    ]
+}

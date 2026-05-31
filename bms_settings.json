@@ -1,0 +1,40 @@
+{
+  "description": "BMS settings for Paris demo — centred on Charles de Gaulle Airport (LFPG), France.",
+  "location": "paris",
+  "system": {
+    "defaultLatitude": 49.0097,
+    "defaultLongitude": 2.5479,
+    "fallbackLatitude": 49.0097,
+    "fallbackLongitude": 2.5479,
+    "defaultZoom": 10,
+    "zoneName": "Paris / CDG Airport"
+  },
+  "dataLayers": {
+    "layersFile": "bms-data-layers.json"
+  },
+  "routes": {
+    "defaultRoute": ""
+  },
+  "connectors": {
+    "json-file": {
+      "filePaths": [
+        "demo_symbols.json"
+      ],
+      "watchFile": false,
+      "pollInterval": 0
+    },
+    "gtfs": {
+      "enabled": false
+    },
+    "ais": {
+      "enabled": false
+    },
+    "adsb": {
+      "configFile": "adsb_config.json",
+      "enabled": false
+    },
+    "cot": {
+      "configFile": "cot_config.json"
+    }
+  }
+}
