@@ -1,0 +1,48 @@
+{
+  "description": "BMS settings for London demo — centred on Farnborough Airfield (EGLF), UK.",
+  "location": "london",
+  "system": {
+    "defaultLatitude": 51.2777,
+    "defaultLongitude": -0.7761,
+    "fallbackLatitude": 51.2777,
+    "fallbackLongitude": -0.7761,
+    "defaultZoom": 10,
+    "zoneName": "London / Farnborough"
+  },
+  "dataLayers": {
+    "layersFile": "bms-data-layers.json"
+  },
+  "routes": {
+    "defaultRoute": ""
+  },
+  "connectors": {
+    "json-file": {
+      "filePaths": [
+        "demo_symbols.json"
+      ],
+      "watchFile": false,
+      "pollInterval": 0
+    },
+    "gtfs": {
+      "sourcesFile": "gtfs_sources_uk.json",
+      "enabled": false
+    },
+    "ais": {
+      "configFile": "ais_config_uk.json",
+      "enabled": false
+    },
+    "adsb": {
+      "configFile": "adsb_config_uk.json",
+      "enabled": false
+    },
+    "cot": {
+      "configFile": "cot_config.json"
+    },
+    "spx": {
+      "configFile": "spx_config.json"
+    },
+    "sapient": {
+      "configFile": "sapient_config.json"
+    }
+  }
+}

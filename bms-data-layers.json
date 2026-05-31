@@ -1,0 +1,78 @@
+{
+    "description": "BMS data layers for London demo — UK & Ireland airports, airspaces, maritime zones, navaids.",
+    "location": "london",
+    "version": "1.0.0",
+    "basePath": "",
+    "dataLayers": [
+        {
+            "layerName": "UK & Ireland Airports, Airfields & Helipads",
+            "layerType": "airports",
+            "file": "data/aviation/uk_airports.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 10,
+            "description": "UK and Ireland airports, regional fields, and helicopter pads with ATC frequencies"
+        },
+        {
+            "layerName": "UK & Ireland Airspaces",
+            "layerType": "airspaces",
+            "file": "data/aviation/uk_airspaces.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "UK and Ireland controlled airspace — CTR, TMA, Danger Areas"
+        },
+        {
+            "layerName": "UK & Ireland Maritime Zones",
+            "layerType": "maritime",
+            "file": "data/maritime/uk_maritime_zones.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 4,
+            "description": "UK and Ireland Exclusive Economic Zones from marineregions.org"
+        },
+        {
+            "layerName": "Shipping Lanes",
+            "layerType": "shipping_lanes",
+            "file": "data/maritime/uk_shipping_lanes.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "Traffic Separation Schemes and shipping lanes from OpenSeaMap"
+        },
+        {
+            "layerName": "Ports",
+            "layerType": "ports",
+            "file": "data/maritime/uk_ports.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 13,
+            "description": "UK and Ireland ports from OpenStreetMap and NGA World Port Index"
+        },
+        {
+            "layerName": "Maritime Navigation Aids",
+            "layerType": "maritime_navaids",
+            "file": "data/maritime/uk_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 14,
+            "description": "Lighthouses, buoys and beacons from OpenSeaMap"
+        },
+        {
+            "layerName": "Navigation Aids",
+            "layerType": "navaids",
+            "file": "data/aviation/uk_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 12,
+            "description": "UK and Ireland VOR, NDB, DME and other navigation aids"
+        }
+    ]
+}

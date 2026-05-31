@@ -1,0 +1,89 @@
+{
+    "description": "Demo military symbols for London / Farnborough area",
+    "location": "london",
+    "centerLatitude": 51.2777,
+    "centerLongitude": -0.7761,
+    "defaultZoom": 10,
+    "symbols": [
+        {
+            "id": "london-hq-001",
+            "sidc": "SFGPUCI--------",
+            "name": "HQ SOUTH",
+            "latitude": 51.2777,
+            "longitude": -0.7761,
+            "altitude": 72,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "london-inf-001",
+            "sidc": "SFGPUCIZ-------",
+            "name": "1 RIFLES",
+            "latitude": 51.320,
+            "longitude": -0.820,
+            "altitude": 65,
+            "bearing": 45,
+            "speed": 0
+        },
+        {
+            "id": "london-inf-002",
+            "sidc": "SFGPUCIZ-------",
+            "name": "2 RIFLES",
+            "latitude": 51.240,
+            "longitude": -0.710,
+            "altitude": 60,
+            "bearing": 90,
+            "speed": 0
+        },
+        {
+            "id": "london-armor-001",
+            "sidc": "SFGPUCAA-------",
+            "name": "A SQN RTR",
+            "latitude": 51.290,
+            "longitude": -0.850,
+            "altitude": 70,
+            "bearing": 270,
+            "speed": 12
+        },
+        {
+            "id": "london-arty-001",
+            "sidc": "SFGPUCF--------",
+            "name": "7 RHA",
+            "latitude": 51.260,
+            "longitude": -0.740,
+            "altitude": 55,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "london-air-001",
+            "sidc": "SFAPMFF--------",
+            "name": "TYPHOON 1",
+            "latitude": 51.350,
+            "longitude": -0.760,
+            "altitude": 6000,
+            "bearing": 180,
+            "speed": 450
+        },
+        {
+            "id": "london-air-002",
+            "sidc": "SFAPMFH--------",
+            "name": "WILDCAT 1",
+            "latitude": 51.300,
+            "longitude": -0.780,
+            "altitude": 300,
+            "bearing": 90,
+            "speed": 120
+        },
+        {
+            "id": "london-hostile-001",
+            "sidc": "SHGPUCIZ-------",
+            "name": "HOSTILE INF",
+            "latitude": 51.200,
+            "longitude": -0.680,
+            "altitude": 50,
+            "bearing": 315,
+            "speed": 5
+        }
+    ]
+}
