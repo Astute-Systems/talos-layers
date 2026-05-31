@@ -1,0 +1,89 @@
+{
+    "description": "Demo military symbols for Perth / CBD area",
+    "location": "perth",
+    "centerLatitude": -31.9505,
+    "centerLongitude": 115.8605,
+    "defaultZoom": 10,
+    "symbols": [
+        {
+            "id": "pth-hq-001",
+            "sidc": "SFGPUCI--------",
+            "name": "HQ 13 BDE",
+            "latitude": -31.9505,
+            "longitude": 115.8605,
+            "altitude": 20,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "pth-inf-001",
+            "sidc": "SFGPUCIZ-------",
+            "name": "16 ALR",
+            "latitude": -31.880,
+            "longitude": 115.810,
+            "altitude": 30,
+            "bearing": 45,
+            "speed": 0
+        },
+        {
+            "id": "pth-inf-002",
+            "sidc": "SFGPUCIZ-------",
+            "name": "10 FSBN",
+            "latitude": -32.020,
+            "longitude": 115.900,
+            "altitude": 15,
+            "bearing": 180,
+            "speed": 0
+        },
+        {
+            "id": "pth-armor-001",
+            "sidc": "SFGPUCAA-------",
+            "name": "C SQN 1AR",
+            "latitude": -31.940,
+            "longitude": 115.770,
+            "altitude": 35,
+            "bearing": 270,
+            "speed": 18
+        },
+        {
+            "id": "pth-air-001",
+            "sidc": "SFAPMFH--------",
+            "name": "MRH-90 2",
+            "latitude": -31.900,
+            "longitude": 115.870,
+            "altitude": 400,
+            "bearing": 90,
+            "speed": 120
+        },
+        {
+            "id": "pth-air-002",
+            "sidc": "SFAPMFF--------",
+            "name": "F/A-18 1",
+            "latitude": -31.960,
+            "longitude": 115.960,
+            "altitude": 8000,
+            "bearing": 270,
+            "speed": 550
+        },
+        {
+            "id": "pth-naval-001",
+            "sidc": "SFSPCLSS-------",
+            "name": "HMAS STIRLING",
+            "latitude": -32.110,
+            "longitude": 115.700,
+            "altitude": 0,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "pth-hostile-001",
+            "sidc": "SHGPUCIZ-------",
+            "name": "OPFOR ELEMENT",
+            "latitude": -32.050,
+            "longitude": 116.000,
+            "altitude": 25,
+            "bearing": 315,
+            "speed": 5
+        }
+    ]
+}

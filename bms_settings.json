@@ -1,0 +1,48 @@
+{
+  "description": "BMS settings for Perth demo — centred on Perth CBD, WA, Australia.",
+  "location": "perth",
+  "system": {
+    "defaultLatitude": -31.9505,
+    "defaultLongitude": 115.8605,
+    "fallbackLatitude": -31.9505,
+    "fallbackLongitude": 115.8605,
+    "defaultZoom": 10,
+    "zoneName": "Perth / CBD"
+  },
+  "dataLayers": {
+    "layersFile": "bms-data-layers.json"
+  },
+  "routes": {
+    "defaultRoute": ""
+  },
+  "connectors": {
+    "json-file": {
+      "filePaths": [
+        "demo_symbols.json"
+      ],
+      "watchFile": false,
+      "pollInterval": 0
+    },
+    "gtfs": {
+      "sourcesFile": "gtfs_sources_aus.json",
+      "enabled": false
+    },
+    "ais": {
+      "configFile": "ais_config_aus.json",
+      "enabled": false
+    },
+    "adsb": {
+      "configFile": "adsb_config_aus.json",
+      "enabled": false
+    },
+    "cot": {
+      "configFile": "cot_config.json"
+    },
+    "spx": {
+      "configFile": "spx_config.json"
+    },
+    "sapient": {
+      "configFile": "sapient_config.json"
+    }
+  }
+}

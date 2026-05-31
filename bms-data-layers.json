@@ -1,0 +1,88 @@
+{
+    "description": "BMS data layers for Perth demo — Australian airports, airspaces, maritime zones and navigation aids.",
+    "location": "perth",
+    "version": "1.0.0",
+    "basePath": "",
+    "dataLayers": [
+        {
+            "layerName": "Australian Airports",
+            "layerType": "airports",
+            "file": "data/aviation/australia_airports.csv",
+            "format": "csv",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 10,
+            "description": "Australian airport locations — includes YPPH Perth Airport and YPED Pearce RAAF Base"
+        },
+        {
+            "layerName": "Airport Frequencies",
+            "layerType": "frequencies",
+            "file": "data/aviation/airport-frequencies.csv",
+            "format": "csv",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 11,
+            "description": "Airport radio frequencies"
+        },
+        {
+            "layerName": "Australian Airspaces",
+            "layerType": "airspaces",
+            "file": "data/aviation/au_airspaces.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "Australian controlled airspace boundaries"
+        },
+        {
+            "layerName": "Australian Maritime Zones",
+            "layerType": "maritime",
+            "file": "data/maritime/au_maritime_zones.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 4,
+            "description": "Australian EEZ and territorial sea boundaries — includes Fremantle approaches"
+        },
+        {
+            "layerName": "Shipping Lanes",
+            "layerType": "shipping_lanes",
+            "file": "data/maritime/au_shipping_lanes.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "Traffic Separation Schemes and shipping lanes from OpenSeaMap"
+        },
+        {
+            "layerName": "Ports",
+            "layerType": "ports",
+            "file": "data/maritime/au_ports.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 13,
+            "description": "Australian ports — includes Fremantle and Kwinana"
+        },
+        {
+            "layerName": "Maritime Navigation Aids",
+            "layerType": "maritime_navaids",
+            "file": "data/maritime/au_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 14,
+            "description": "Lighthouses, buoys and beacons from OpenSeaMap"
+        },
+        {
+            "layerName": "Navigation Aids",
+            "layerType": "navaids",
+            "file": "data/aviation/au_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 12,
+            "description": "Australian VOR, NDB, DME and other navigation aids"
+        }
+    ]
+}
