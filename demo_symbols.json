@@ -1,0 +1,99 @@
+{
+    "description": "Demo military symbols for Brisbane / Fortitude Valley area",
+    "location": "brisbane",
+    "centerLatitude": -27.4568,
+    "centerLongitude": 153.0357,
+    "defaultZoom": 10,
+    "symbols": [
+        {
+            "id": "bne-hq-001",
+            "sidc": "SFGPUCI--------",
+            "name": "HQ 7 BDE",
+            "latitude": -27.4568,
+            "longitude": 153.0357,
+            "altitude": 27,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "bne-inf-001",
+            "sidc": "SFGPUCIZ-------",
+            "name": "6 RAR",
+            "latitude": -27.380,
+            "longitude": 152.970,
+            "altitude": 35,
+            "bearing": 45,
+            "speed": 0
+        },
+        {
+            "id": "bne-inf-002",
+            "sidc": "SFGPUCIZ-------",
+            "name": "8/9 RAR",
+            "latitude": -27.530,
+            "longitude": 153.100,
+            "altitude": 22,
+            "bearing": 315,
+            "speed": 0
+        },
+        {
+            "id": "bne-armor-001",
+            "sidc": "SFGPUCAA-------",
+            "name": "B SQN 2CAV",
+            "latitude": -27.450,
+            "longitude": 152.920,
+            "altitude": 40,
+            "bearing": 270,
+            "speed": 15
+        },
+        {
+            "id": "bne-arty-001",
+            "sidc": "SFGPUCF--------",
+            "name": "4 RGT RAA",
+            "latitude": -27.500,
+            "longitude": 153.060,
+            "altitude": 30,
+            "bearing": 0,
+            "speed": 0
+        },
+        {
+            "id": "bne-air-001",
+            "sidc": "SFAPMFH--------",
+            "name": "MRH-90 1",
+            "latitude": -27.400,
+            "longitude": 153.040,
+            "altitude": 500,
+            "bearing": 90,
+            "speed": 130
+        },
+        {
+            "id": "bne-air-002",
+            "sidc": "SFAPMFH--------",
+            "name": "ARH TIGER 1",
+            "latitude": -27.480,
+            "longitude": 153.080,
+            "altitude": 300,
+            "bearing": 180,
+            "speed": 150
+        },
+        {
+            "id": "bne-hostile-001",
+            "sidc": "SHGPUCIZ-------",
+            "name": "OPFOR UNIT",
+            "latitude": -27.600,
+            "longitude": 153.150,
+            "altitude": 20,
+            "bearing": 330,
+            "speed": 6
+        },
+        {
+            "id": "bne-naval-001",
+            "sidc": "SFSPCLSS-------",
+            "name": "HMAS BRISBANE",
+            "latitude": -27.370,
+            "longitude": 153.170,
+            "altitude": 0,
+            "bearing": 45,
+            "speed": 12
+        }
+    ]
+}
