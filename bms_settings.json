@@ -1,5 +1,5 @@
 {
-  "description": "BMS settings for Brisbane demo — centred on Fortitude Valley, QLD, Australia.",
+  "description": "BMS settings for Brisbane demo \u2014 centred on Fortitude Valley, QLD, Australia.",
   "location": "brisbane",
   "system": {
     "defaultLatitude": -27.4568,
@@ -7,7 +7,8 @@
     "fallbackLatitude": -27.4568,
     "fallbackLongitude": 153.0357,
     "defaultZoom": 10,
-    "zoneName": "Brisbane / Fortitude Valley"
+    "zoneName": "Brisbane / Fortitude Valley",
+    "callsign": "WOMBAT"
   },
   "dataLayers": {
     "layersFile": "bms-data-layers.json"
