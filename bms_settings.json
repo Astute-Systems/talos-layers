@@ -1,5 +1,5 @@
 {
-  "description": "BMS settings for Paris demo — centred on Charles de Gaulle Airport (LFPG), France.",
+  "description": "BMS settings for Paris demo \u2014 centred on Charles de Gaulle Airport (LFPG), France.",
   "location": "paris",
   "system": {
     "defaultLatitude": 49.0097,
@@ -7,7 +7,8 @@
     "fallbackLatitude": 49.0097,
     "fallbackLongitude": 2.5479,
     "defaultZoom": 10,
-    "zoneName": "Paris / CDG Airport"
+    "zoneName": "Paris / CDG Airport",
+    "callsign": "RAPTOR"
   },
   "dataLayers": {
     "layersFile": "bms-data-layers.json"
