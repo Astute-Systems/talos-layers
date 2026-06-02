@@ -1,0 +1,49 @@
+{
+  "description": "BMS settings for Brisbane demo — centred on Fortitude Valley, QLD, Australia.",
+  "location": "brisbane",
+  "system": {
+    "defaultLatitude": -27.4568,
+    "defaultLongitude": 153.0357,
+    "fallbackLatitude": -27.4568,
+    "fallbackLongitude": 153.0357,
+    "defaultZoom": 10,
+    "zoneName": "Brisbane / Fortitude Valley"
+  },
+  "dataLayers": {
+    "layersFile": "bms-data-layers.json"
+  },
+  "routes": {
+    "defaultRoute": ""
+  },
+  "connectors": {
+    "json-file": {
+      "filePaths": [
+        "demo_symbols.json",
+        "test_objects.json"
+      ],
+      "watchFile": false,
+      "pollInterval": 0
+    },
+    "gtfs": {
+      "sourcesFile": "gtfs_sources_aus.json",
+      "enabled": false
+    },
+    "ais": {
+      "configFile": "ais_config_aus.json",
+      "enabled": false
+    },
+    "adsb": {
+      "configFile": "adsb_config_aus.json",
+      "enabled": false
+    },
+    "cot": {
+      "configFile": "cot_config.json"
+    },
+    "spx": {
+      "configFile": "spx_config.json"
+    },
+    "sapient": {
+      "configFile": "sapient_config.json"
+    }
+  }
+}
