@@ -18,7 +18,8 @@
   "connectors": {
     "json-file": {
       "filePaths": [
-        "demo_symbols.json"
+        "demo_symbols.json",
+        "test_objects.json"
       ],
       "watchFile": false,
       "pollInterval": 0
