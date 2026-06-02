@@ -1,13 +1,13 @@
 {
-  "description": "BMS settings for Paris demo \u2014 centred on Charles de Gaulle Airport (LFPG), France.",
+  "description": "BMS settings for Eurosatory 2026 \u2014 Paris Nord Villepinte Exhibition Centre.",
   "location": "paris",
   "system": {
-    "defaultLatitude": 49.0097,
-    "defaultLongitude": 2.5479,
-    "fallbackLatitude": 49.0097,
-    "fallbackLongitude": 2.5479,
+    "defaultLatitude": 48.9714,
+    "defaultLongitude": 2.5254,
+    "fallbackLatitude": 48.9714,
+    "fallbackLongitude": 2.5254,
     "defaultZoom": 10,
-    "zoneName": "Paris / CDG Airport",
+    "zoneName": "Paris Nord Villepinte",
     "callsign": "EUROSATORY"
   },
   "dataLayers": {
