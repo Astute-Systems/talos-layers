@@ -18,7 +18,9 @@
   "connectors": {
     "json-file": {
       "filePaths": [
-        "demo_symbols.json"
+        "demo_symbols.json",
+        "uk_adsb_objects.json",
+        "uk_ais_objects.json"
       ],
       "watchFile": false,
       "pollInterval": 0
