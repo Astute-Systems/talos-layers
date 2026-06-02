@@ -8,7 +8,7 @@
     "fallbackLongitude": 2.5479,
     "defaultZoom": 10,
     "zoneName": "Paris / CDG Airport",
-    "callsign": "RAPTOR"
+    "callsign": "EUROSATORY"
   },
   "dataLayers": {
     "layersFile": "bms-data-layers.json"
