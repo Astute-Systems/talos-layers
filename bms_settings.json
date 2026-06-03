@@ -39,5 +39,24 @@
     "cot": {
       "configFile": "cot_config.json"
     }
+  },
+  "display": {
+    "mapSource": "Esri - World Imagery",
+    "layers": {
+      "symbols": true,
+      "routes": true,
+      "airports": false,
+      "airspaces": false,
+      "navaids": false,
+      "bullseyes": true,
+      "geofences": true,
+      "cameras": true,
+      "maritimeZones": false,
+      "shippingLanes": false,
+      "ports": false,
+      "maritimeNavAids": false,
+      "weatherRadar": false,
+      "clouds": false
+    }
   }
 }
