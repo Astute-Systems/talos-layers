@@ -47,5 +47,24 @@
     "sapient": {
       "configFile": "sapient_config.json"
     }
+  },
+  "display": {
+    "mapSource": "OpenStreetMap - Standard",
+    "layers": {
+      "symbols": true,
+      "routes": true,
+      "airports": true,
+      "airspaces": true,
+      "navaids": true,
+      "bullseyes": true,
+      "geofences": true,
+      "cameras": true,
+      "maritimeZones": true,
+      "shippingLanes": true,
+      "ports": true,
+      "maritimeNavAids": true,
+      "weatherRadar": false,
+      "clouds": false
+    }
   }
 }
