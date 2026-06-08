@@ -7,20 +7,21 @@ Use the **GitHub → Sync Layers** panel inside GVA BMS to download and apply a 
 
 ## Available Demo Locations
 
-| Branch | Location | Centre |
-|--------|----------|--------|
-| `london` | Farnborough, UK | 51.2777° N, 0.7761° W |
-| `paris` | CDG Airport, France | 49.0097° N, 2.5479° E |
-| `brisbane` | Fortitude Valley, QLD, AU | 27.4568° S, 153.0357° E |
-| `perth` | Perth CBD, WA, AU | 31.9505° S, 115.8605° E |
+| Branch     | Location                          | Centre                  |
+| ---------- | --------------------------------- | ----------------------- |
+| `london`   | Farnborough, UK                   | 51.2777° N, 0.7761° W   |
+| `paris`    | CDG Airport, France               | 49.0097° N, 2.5479° E   |
+| `belfast`  | Belfast Harbour, Northern Ireland | 54.5973° N, 5.9301° W   |
+| `brisbane` | Fortitude Valley, QLD, AU         | 27.4568° S, 153.0357° E |
+| `perth`    | Perth CBD, WA, AU                 | 31.9505° S, 115.8605° E |
 
 ## Files per Branch
 
-| File | Purpose |
-|------|---------|
-| `bms_settings.json` | Main settings — map centre coordinates, connector config, and pointer to the layers file |
-| `bms-data-layers.json` | Data layer definitions — airports, airspaces, maritime zones, etc. |
-| `demo_symbols.json` | Sample pre-placed military symbols around the demo area |
+| File                   | Purpose                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| `bms_settings.json`    | Main settings — map centre coordinates, connector config, and pointer to the layers file |
+| `bms-data-layers.json` | Data layer definitions — airports, airspaces, maritime zones, etc.                       |
+| `demo_symbols.json`    | Sample pre-placed military symbols around the demo area                                  |
 
 ## Usage
 

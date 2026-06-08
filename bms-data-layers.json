@@ -1,6 +1,6 @@
 {
-    "description": "BMS data layers for Paris demo — uses global OurAirports CSV and navaids covering France/Western Europe.",
-    "location": "paris",
+    "description": "BMS data layers for Belfast — covers Northern Ireland, Republic of Ireland, Irish Sea, and North Channel. Uses global OurAirports CSV and navaids.",
+    "location": "belfast",
     "version": "1.0.0",
     "basePath": "",
     "dataLayers": [
@@ -12,7 +12,7 @@
             "enabled": true,
             "visible": true,
             "zIndex": 10,
-            "description": "Global OurAirports database — includes CDG, ORY, LBG and all French aerodromes"
+            "description": "Global OurAirports database — includes BFS (Belfast City), BHD (Belfast Intl), DUB (Dublin), PIK (Prestwick), and all regional aerodromes"
         },
         {
             "layerName": "Airport Frequencies",
@@ -32,7 +32,7 @@
             "enabled": true,
             "visible": true,
             "zIndex": 12,
-            "description": "Global VOR, NDB, DME navigation aids from OurAirports — covers French NAVAID network"
+            "description": "Global VOR, NDB, DME navigation aids — covers Belfast, Dublin, Scottish NAVAIDs and Irish Sea approach aids"
         }
     ]
 }

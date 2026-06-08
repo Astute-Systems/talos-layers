@@ -1,14 +1,14 @@
 {
-  "description": "BMS settings for Eurosatory 2026 \u2014 Paris Nord Villepinte Exhibition Centre.",
-  "location": "paris",
+  "description": "BMS settings for Belfast — Belfast Harbour/Titanic Quarter, Northern Ireland.",
+  "location": "belfast",
   "system": {
-    "defaultLatitude": 48.9714,
-    "defaultLongitude": 2.5254,
-    "fallbackLatitude": 48.9714,
-    "fallbackLongitude": 2.5254,
-    "defaultZoom": 10,
-    "zoneName": "Paris Nord Villepinte",
-    "callsign": "EUROSATORY"
+    "defaultLatitude": 54.5973,
+    "defaultLongitude": -5.9301,
+    "fallbackLatitude": 54.5973,
+    "fallbackLongitude": -5.9301,
+    "defaultZoom": 9,
+    "zoneName": "Belfast Harbour",
+    "callsign": "BELFAST"
   },
   "dataLayers": {
     "layersFile": "bms-data-layers.json"
@@ -19,9 +19,7 @@
   "connectors": {
     "json-file": {
       "filePaths": [
-        "demo_symbols.json",
-        "fr_adsb_objects.json",
-        "fr_ais_objects.json"
+        "demo_symbols.json"
       ],
       "watchFile": false,
       "pollInterval": 0
@@ -30,11 +28,12 @@
       "enabled": false
     },
     "ais": {
-      "enabled": false
+      "enabled": true,
+      "configFile": "ais_config.json"
     },
     "adsb": {
-      "configFile": "adsb_config.json",
-      "enabled": false
+      "enabled": true,
+      "configFile": "adsb_config.json"
     },
     "cot": {
       "configFile": "cot_config.json"
@@ -45,16 +44,16 @@
     "layers": {
       "symbols": true,
       "routes": true,
-      "airports": false,
+      "airports": true,
       "airspaces": false,
       "navaids": false,
       "bullseyes": true,
       "geofences": true,
       "cameras": true,
-      "maritimeZones": false,
-      "shippingLanes": false,
-      "ports": false,
-      "maritimeNavAids": false,
+      "maritimeZones": true,
+      "shippingLanes": true,
+      "ports": true,
+      "maritimeNavAids": true,
       "weatherRadar": false,
       "clouds": false
     }

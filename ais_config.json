@@ -1,0 +1,15 @@
+{
+    "apiKey": "",
+    "centerLat": 54.5973,
+    "centerLon": -5.9301,
+    "radiusNm": 200.0,
+    "navalOnly": false,
+    "showNaval": true,
+    "showCargo": true,
+    "showTanker": true,
+    "showPassenger": true,
+    "showFishing": true,
+    "showSearchRescue": true,
+    "showLawEnforcement": true,
+    "description": "AISStream.io API configuration for Belfast/Irish Sea vessel tracking — 200 nm radius covering Irish Sea, North Channel, and approaches. Get a free API key from https://aisstream.io/authenticate"
+}
