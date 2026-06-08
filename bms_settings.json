@@ -1,5 +1,5 @@
 {
-  "description": "BMS settings for Belfast — Belfast Harbour/Titanic Quarter, Northern Ireland.",
+  "description": "BMS settings for Belfast \u2014 Belfast Harbour/Titanic Quarter, Northern Ireland.",
   "location": "belfast",
   "system": {
     "defaultLatitude": 54.5973,
@@ -25,7 +25,8 @@
       "pollInterval": 0
     },
     "gtfs": {
-      "enabled": false
+      "enabled": true,
+      "sourcesFile": "gtfs_sources_belfast.json"
     },
     "ais": {
       "enabled": true,
