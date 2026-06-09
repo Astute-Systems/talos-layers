@@ -1,6 +1,6 @@
 {
     "description": "GTFS Real-Time sources for Belfast / Northern Ireland",
-    "version": "1.2",
+    "version": "1.3",
     "sources": [
         {
             "id": "bods-ni-buses",
@@ -23,12 +23,12 @@
             "token": "${NTA_API_KEY}",
             "tokenHeaderName": "x-api-key",
             "tokenPrefix": "",
-            "vehicleType": "bus",
-            "intervalSeconds": 15,
+            "vehicleType": "transit",
+            "intervalSeconds": 60,
             "enabled": true,
             "provider": "National Transport Authority (Ireland)",
             "coverage": "Republic of Ireland buses, DART trains, and cross-border Translink/Bus \u00c9ireann services into NI",
-            "note": "Free API key: https://developer.nationaltransport.ie/signup \u2014 includes all vehicle types"
+            "note": "Free API key: https://developer.nationaltransport.ie/signup \u2014 includes all vehicle types Includes buses, coaches, DART trains, Luas trams."
         },
         {
             "id": "tfi-trip-updates",
@@ -38,7 +38,7 @@
             "tokenHeaderName": "x-api-key",
             "tokenPrefix": "",
             "vehicleType": "bus",
-            "intervalSeconds": 30,
+            "intervalSeconds": 90,
             "enabled": true,
             "provider": "National Transport Authority (Ireland)",
             "coverage": "Republic of Ireland trip delay and cancellation data",
