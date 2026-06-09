@@ -1,5 +1,5 @@
 {
-    "apiKey": "f02e72bffed46969d1deaefa78cecb0afff70aca",
+    "apiKey": "${AISTREAM_TOKEN}",
     "centerLat": 54.5973,
     "centerLon": -5.9301,
     "radiusNm": 200.0,
