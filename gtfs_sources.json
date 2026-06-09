@@ -1,20 +1,34 @@
 {
     "description": "GTFS Real-Time sources for Belfast / Northern Ireland",
-    "version": "1.3",
+    "version": "1.4",
     "sources": [
         {
-            "id": "bods-ni-buses",
-            "name": "Northern Ireland Buses (BODS)",
+            "id": "bods-ni-coaches",
+            "name": "Northern Ireland Coaches (BODS)",
             "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?boundingBox=-8.2,54.0,-5.4,55.4",
             "token": "${BODS_API_KEY}",
             "tokenHeaderName": "Authorization",
             "tokenPrefix": "Token",
             "vehicleType": "bus",
-            "intervalSeconds": 15,
-            "enabled": false,
+            "intervalSeconds": 30,
+            "enabled": true,
             "provider": "UK Bus Open Data Service (DfT)",
-            "coverage": "All registered bus operators in Northern Ireland \u2014 Translink Ulsterbus, Metro Belfast, Glider BRT",
-            "note": "Disabled: Translink is not mandated to publish live vehicle positions to BODS (NI devolved). Feed returns empty. API key: https://data.bus-data.dft.gov.uk/account/signup/"
+            "coverage": "National coach operators registered on BODS operating in NI — National Express and other cross-channel operators. Translink local buses are NOT included (NI devolved, not BODS-mandated).",
+            "note": "API key: https://data.bus-data.dft.gov.uk/account/signup/"
+        },
+        {
+            "id": "bods-scotland-south",
+            "name": "Scotland South Buses (BODS)",
+            "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?boundingBox=-6.5,54.5,-1.5,56.5",
+            "token": "${BODS_API_KEY}",
+            "tokenHeaderName": "Authorization",
+            "tokenPrefix": "Token",
+            "vehicleType": "bus",
+            "intervalSeconds": 45,
+            "enabled": true,
+            "provider": "UK Bus Open Data Service (DfT)",
+            "coverage": "Southern Scotland — Stranraer, Ayrshire, Dumfries & Galloway. Covers Stagecoach Western, Citylink, and National Express coaches serving NI ferry ports.",
+            "note": "Same BODS API key as NI coaches"
         },
         {
             "id": "tfi-vehicle-positions",
@@ -28,7 +42,7 @@
             "enabled": true,
             "provider": "National Transport Authority (Ireland)",
             "coverage": "Republic of Ireland buses, DART trains, and cross-border Translink/Bus \u00c9ireann services into NI",
-            "note": "Free API key: https://developer.nationaltransport.ie/signup \u2014 includes all vehicle types Includes buses, coaches, DART trains, Luas trams."
+            "note": "Free API key: https://developer.nationaltransport.ie/signup \u2014 includes all vehicle types"
         },
         {
             "id": "tfi-trip-updates",
