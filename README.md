@@ -28,7 +28,7 @@ Switch branches in GVA BMS via **Settings → GitHub → Sync Layers** to change
 | `demo_symbols.json` | Sample pre-placed military symbols around the demo area |
 | `ais_config.json` | AIS vessel tracking connector config (AISStream.io WebSocket) |
 | `adsb_config.json` | ADS-B aircraft tracking connector config (OpenSky Network REST) |
-| `gtfs_sources_*.json` | GTFS real-time feed sources for the branch location |
+| `gtfs_sources.json` | GTFS real-time feed sources for the branch location |
 
 ---
 
@@ -59,8 +59,8 @@ block or an `EnvironmentFile=`.
 | Variable | Used in | Service | Cost | Registration |
 |----------|---------|---------|------|--------------|
 | `AISTREAM_TOKEN` | `ais_config.json` → `apiKey` | AISStream.io WebSocket vessel positions | Free tier available | [aisstream.io/authenticate](https://aisstream.io/authenticate) |
-| `BODS_API_KEY` | `gtfs_sources_*.json` → `token` (Translink feeds) | UK Bus Open Data Service — Translink Ulsterbus, Metro Belfast | Free | [data.bus-data.dft.gov.uk](https://data.bus-data.dft.gov.uk/account/signup/) |
-| `NTA_API_KEY` | `gtfs_sources_*.json` → `token` (TfI feeds) | Transport for Ireland GTFS-RT — buses, DART, Enterprise rail | Free | [developer.nationaltransport.ie](https://developer.nationaltransport.ie/signup) |
+| `BODS_API_KEY` | `gtfs_sources.json` → `token` (Translink feeds) | UK Bus Open Data Service — Translink Ulsterbus, Metro Belfast | Free | [data.bus-data.dft.gov.uk](https://data.bus-data.dft.gov.uk/account/signup/) |
+| `NTA_API_KEY` | `gtfs_sources.json` → `token` (TfI feeds) | Transport for Ireland GTFS-RT — buses, DART, Enterprise rail | Free | [developer.nationaltransport.ie](https://developer.nationaltransport.ie/signup) |
 | `OPENSKY_CLIENT_ID` | `adsb_config.json` → `clientId` | OpenSky Network ADS-B — higher rate limits | Free (anonymous also works) | [opensky-network.org/index.php?option=com_users&view=registration](https://opensky-network.org/index.php?option=com_users&view=registration) |
 | `OPENSKY_CLIENT_SECRET` | `adsb_config.json` → `clientSecret` | OpenSky Network — paired with `OPENSKY_CLIENT_ID` | Free | Same as above |
 
@@ -102,7 +102,7 @@ block or an `EnvironmentFile=`.
 2. Edit `bms_settings.json` with the correct default lat/lon and zone name.
 3. Edit `bms-data-layers.json` to reference the correct regional data files.
 4. Add `ais_config.json` and `adsb_config.json` with centre coordinates and radius.
-5. Add a `gtfs_sources_<location>.json` with the relevant regional GTFS-RT feeds.
+5. Add a `gtfs_sources.json` with the relevant regional GTFS-RT feeds.
    Use `${VAR_NAME}` for any API tokens — do **not** commit raw keys.
 6. Optionally update `demo_symbols.json` with representative symbols.
 7. Push the branch — it will appear in the BMS branch selector after the next pull.
