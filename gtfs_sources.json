@@ -17,9 +17,9 @@
             "note": "API key: https://data.bus-data.dft.gov.uk/account/signup/"
         },
         {
-            "id": "bods-scotland-south",
-            "name": "Scotland South Buses (BODS)",
-            "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?boundingBox=-6.5,54.5,-1.5,56.5",
+            "id": "bods-scotland-west",
+            "name": "Scotland West Buses (BODS)",
+            "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?boundingBox=-6.5,54.5,-3.0,56.5",
             "token": "${BODS_API_KEY}",
             "tokenHeaderName": "Authorization",
             "tokenPrefix": "Token",
@@ -27,8 +27,8 @@
             "intervalSeconds": 45,
             "enabled": true,
             "provider": "UK Bus Open Data Service (DfT)",
-            "coverage": "Southern Scotland — Stranraer, Ayrshire, Dumfries & Galloway. Covers Stagecoach Western, Citylink, and National Express coaches serving NI ferry ports.",
-            "note": "Same BODS API key as NI coaches"
+            "coverage": "West Scotland — Stranraer, Ayrshire, Dumfries & Galloway. Covers Stagecoach Western, Citylink, and National Express coaches serving NI ferry ports at Cairnryan.",
+            "note": "Same BODS API key as NI coaches. Bounding box covers Cairnryan ferry port to NI."
         },
         {
             "id": "tfi-vehicle-positions",
