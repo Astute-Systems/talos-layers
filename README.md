@@ -47,6 +47,7 @@ export BODS_API_KEY=<your UK BODS key>
 export NTA_API_KEY=<your NTA/TfI key>
 export OPENSKY_CLIENT_ID=<your OpenSky username>
 export OPENSKY_CLIENT_SECRET=<your OpenSky password>
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 ```
 
 Add to `~/.bashrc`:
@@ -62,7 +63,8 @@ Add to `~/.bashrc`:
     "BODS_API_KEY":          "<your UK BODS key>",
     "NTA_API_KEY":           "<your NTA/TfI key>",
     "OPENSKY_CLIENT_ID":     "<your OpenSky username>",
-    "OPENSKY_CLIENT_SECRET": "<your OpenSky password>"
+    "OPENSKY_CLIENT_SECRET": "<your OpenSky password>",
+    "SSL_CERT_FILE":         "/etc/ssl/certs/ca-certificates.crt"
 }
 ```
 
