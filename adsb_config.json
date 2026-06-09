@@ -1,9 +1,9 @@
 {
-    "clientId": "",
-    "clientSecret": "",
+    "clientId": "${OPENSKY_CLIENT_ID}",
+    "clientSecret": "${OPENSKY_CLIENT_SECRET}",
     "centerLat": 54.5973,
     "centerLon": -5.9301,
     "radiusKm": 370.0,
     "intervalSeconds": 10,
-    "description": "OpenSky Network API configuration for Belfast area aircraft tracking — 370 km radius (200 nm) covering Northern Ireland, Republic of Ireland, Scotland, and Irish Sea approaches. Optional OpenSky credentials improve rate limits — register at https://opensky-network.org/index.php?option=com_users&view=registration"
+    "description": "OpenSky Network API configuration for Belfast area aircraft tracking \u2014 370 km radius (200 nm) covering Northern Ireland, Republic of Ireland, Scotland, and Irish Sea approaches. Optional OpenSky credentials improve rate limits \u2014 register at https://opensky-network.org/index.php?option=com_users&view=registration"
 }
