@@ -25,14 +25,14 @@
             "description": "Global airport radio frequencies from OurAirports"
         },
         {
-            "layerName": "Navigation Aids (Global)",
+            "layerName": "Navigation Aids (UK)",
             "layerType": "navaids",
-            "file": "data/aviation/navaids.csv",
-            "format": "csv",
+            "file": "data/aviation/uk_navaids.geojson",
+            "format": "geojson",
             "enabled": true,
             "visible": true,
             "zIndex": 12,
-            "description": "Global VOR, NDB, DME navigation aids — covers Belfast, Dublin, Scottish NAVAIDs and Irish Sea approach aids"
+            "description": "UK VOR, NDB, DME navigation aids — covers Belfast, Dublin, Scottish NAVAIDs and Irish Sea approach aids"
         }
     ]
 }
