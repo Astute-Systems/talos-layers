@@ -1,78 +1,62 @@
 {
-    "description": "GTFS Real-Time sources for Belfast / Northern Ireland \u2014 Translink (via UK BODS), Transport for Ireland cross-border services, and Irish Rail",
-    "version": "1.0",
+    "description": "GTFS Real-Time sources for Belfast / Northern Ireland",
+    "version": "1.1",
     "sources": [
         {
-            "id": "bods-translink-ulsterbus",
-            "name": "Translink Ulsterbus",
-            "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?operatorRef=UTRANS",
-            "token": "${BODS_API_KEY}",
-            "vehicleType": "bus",
-            "intervalSeconds": 15,
-            "enabled": true,
-            "provider": "Translink / UK Bus Open Data Service",
-            "coverage": "Northern Ireland (rural & intercity)",
-            "note": "Free API key required from https://data.bus-data.dft.gov.uk/account/login/ \u2014 set in token field"
-        },
-        {
-            "id": "bods-translink-metro",
-            "name": "Translink Metro Belfast",
-            "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?operatorRef=MBUS",
-            "token": "${BODS_API_KEY}",
-            "vehicleType": "bus",
-            "intervalSeconds": 10,
-            "enabled": true,
-            "provider": "Translink / UK Bus Open Data Service",
-            "coverage": "Belfast city buses",
-            "note": "Same BODS API key as Ulsterbus \u2014 set in token field"
-        },
-        {
-            "id": "bods-ni-all",
-            "name": "Northern Ireland All Buses (BODS)",
+            "id": "bods-ni-buses",
+            "name": "Northern Ireland Buses (BODS bounding box)",
             "url": "https://data.bus-data.dft.gov.uk/api/v1/gtfsrtdatafeed/?boundingBox=-8.2,54.0,-5.4,55.4",
             "token": "${BODS_API_KEY}",
+            "tokenHeaderName": "Authorization",
+            "tokenPrefix": "Token",
             "vehicleType": "bus",
             "intervalSeconds": 15,
-            "enabled": false,
+            "enabled": true,
             "provider": "UK Bus Open Data Service (DfT)",
-            "coverage": "All bus operators in Northern Ireland bounding box",
-            "note": "Alternative to per-operator feeds \u2014 covers all NI operators in one request. Disable the per-operator entries above if using this."
+            "coverage": "All registered bus operators in Northern Ireland \u2014 Translink Ulsterbus, Metro Belfast, Glider BRT",
+            "note": "BODS regulations do not mandate NI operators to publish live vehicle positions; feed may contain timetable data only. API key: https://data.bus-data.dft.gov.uk/account/signup/"
         },
         {
             "id": "tfi-vehicle-positions",
             "name": "Transport for Ireland Vehicle Positions",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/Vehicles",
             "token": "${NTA_API_KEY}",
+            "tokenHeaderName": "Ocp-Apim-Subscription-Key",
+            "tokenPrefix": "",
             "vehicleType": "bus",
             "intervalSeconds": 15,
             "enabled": true,
             "provider": "National Transport Authority (Ireland)",
-            "coverage": "Republic of Ireland + cross-border Translink services",
-            "note": "Free API key from https://developer.nationaltransport.ie/  \u2014 set in token field. Covers Dublin Bus, Bus \u00c9ireann, and cross-border services into NI."
+            "coverage": "Republic of Ireland buses + cross-border Translink/Bus \u00c9ireann services into NI",
+            "note": "Free API key: https://developer.nationaltransport.ie/signup"
         },
         {
             "id": "tfi-trip-updates",
             "name": "Transport for Ireland Trip Updates",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/TripUpdates",
             "token": "${NTA_API_KEY}",
+            "tokenHeaderName": "Ocp-Apim-Subscription-Key",
+            "tokenPrefix": "",
             "vehicleType": "bus",
             "intervalSeconds": 30,
             "enabled": true,
             "provider": "National Transport Authority (Ireland)",
-            "coverage": "Republic of Ireland trip delay / cancellation data",
-            "note": "Same NTA API key as vehicle positions"
+            "coverage": "Republic of Ireland trip delay and cancellation data",
+            "note": "Same NTA key as vehicle positions"
         },
         {
             "id": "tfi-rail",
-            "name": "Transport for Ireland Rail (DART/Commuter)",
+            "name": "Transport for Ireland Rail (DART / Enterprise)",
             "url": "https://api.nationaltransport.ie/gtfsr/v2/gtfsrealtime",
             "token": "${NTA_API_KEY}",
+            "tokenHeaderName": "Ocp-Apim-Subscription-Key",
+            "tokenPrefix": "",
             "vehicleType": "train",
             "intervalSeconds": 30,
             "enabled": true,
             "provider": "National Transport Authority (Ireland) / Iarnr\u00f3d \u00c9ireann",
-            "coverage": "Dublin DART, commuter rail, Enterprise Belfast-Dublin",
-            "note": "Same NTA API key. Enterprise service runs Belfast-Dublin via Newry."
+            "coverage": "DART, Dublin commuter rail, Enterprise Belfast\u2013Dublin (via Newry)",
+            "note": "Same NTA key. Enterprise is the only direct Belfast\u2013Dublin rail service."
         }
     ]
 }
