@@ -1,0 +1,211 @@
+{
+  "sources": [
+    {
+      "id": "seq-buses",
+      "name": "SEQ Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Bus",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "seq-trains",
+      "name": "SEQ Trains",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Rail",
+      "token": "",
+      "vehicleType": "train",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "seq-trams",
+      "name": "SEQ Trams",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Tram",
+      "token": "",
+      "vehicleType": "tram",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "seq-ferries",
+      "name": "SEQ Ferries",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Ferry",
+      "token": "",
+      "vehicleType": "ferry",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "cairns-buses",
+      "name": "Cairns Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/VehiclePositions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsi-buses",
+      "name": "North Stradbroke Island Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/NSI/VehiclePositions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "mhb-buses",
+      "name": "Maryborough Hervey Bay Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/MHB/VehiclePositions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "bowen-buses",
+      "name": "Bowen Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/BOW/VehiclePositions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "innisfail-buses",
+      "name": "Innisfail Buses",
+      "url": "https://gtfsrt.api.translink.com.au/api/realtime/INN/VehiclePositions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-buses",
+      "name": "NSW Sydney Buses",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/buses",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-ferries",
+      "name": "NSW Sydney Ferries",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/ferries/sydneyferries",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "ferry",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-cbd-lightrail",
+      "name": "NSW CBD & South East Light Rail",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/cbdandsoutheast",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "lightrail",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-innerwest-lightrail",
+      "name": "NSW Inner West Light Rail",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/innerwest",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "lightrail",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-newcastle-lightrail",
+      "name": "NSW Newcastle Light Rail",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/newcastle",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "lightrail",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-parramatta-lightrail",
+      "name": "NSW Parramatta Light Rail",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/parramatta",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "lightrail",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-sydney-trains",
+      "name": "NSW Sydney Trains",
+      "url": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/sydneytrains",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "train",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-metro",
+      "name": "NSW Sydney Metro Trains",
+      "url": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/metro",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "train",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-trains",
+      "name": "NSW Trains",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/nswtrains",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "train",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-centralwest-buses",
+      "name": "Central West Orana Buses",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/centralwestandorana",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-newengland-buses",
+      "name": "New England North West Buses",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/newenglandnorthwest",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "nsw-northcoast-buses",
+      "name": "North Coast Buses",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/northcoast",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "act-lightrail",
+      "name": "ACT Light Rail",
+      "url": "http://files.transport.act.gov.au/feeds/lightrail.pb",
+      "token": "",
+      "vehicleType": "lightrail",
+      "intervalSeconds": 30,
+      "enabled": true
+    },
+    {
+      "id": "adelaide-buses",
+      "name": "Adelaide Buses",
+      "url": "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions",
+      "token": "",
+      "vehicleType": "bus",
+      "intervalSeconds": 30,
+      "enabled": true
+    }
+  ]
+}

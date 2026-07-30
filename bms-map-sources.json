@@ -1,0 +1,879 @@
+{
+    "mapSources": [
+        {
+            "provider": "Bing",
+            "sources": [
+                {
+                    "name": "Bing - Hybrid",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "png",
+                    "url": "https://ecn.t2.tiles.virtualearth.net/tiles/h{$q}?g=761&mkt=en-us",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "Bing",
+                    "sourceFile": "Bing_Hybrid.xml"
+                },
+                {
+                    "name": "Bing - Maps",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://r0.ortho.tiles.virtualearth.net/tiles/r{$q}.png?g=45",
+                    "backgroundColor": "#000000",
+                    "provider": "Bing",
+                    "sourceFile": "Bing_Maps.xml"
+                },
+                {
+                    "name": "Bing - Satellite",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "url": "https://ecn.t2.tiles.virtualearth.net/tiles/a{$q}?g=761&mkt=en-us",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "Bing",
+                    "sourceFile": "Bing_Satellite.xml"
+                }
+            ]
+        },
+        {
+            "provider": "ESRI",
+            "sources": [
+                {
+                    "name": "Esri - World Imagery",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "esri_world_imagery.xml"
+                },
+                {
+                    "name": "Esri - Clarity",
+                    "minZoom": 1,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "esri_clarity.xml"
+                },
+                {
+                    "name": "Esri - Nat Geo World",
+                    "minZoom": 1,
+                    "maxZoom": 16,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "esri_nat_geo_world.xml"
+                },
+                {
+                    "name": "Esri - USA Topo Maps",
+                    "minZoom": 0,
+                    "maxZoom": 15,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "esri_usa_topo_maps.xml"
+                },
+                {
+                    "name": "Esri - World Street Map",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "bms_esri_street.json"
+                },
+                {
+                    "name": "Esri - World Topo",
+                    "minZoom": 1,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "ESRI",
+                    "sourceFile": "esri_world_topo.xml"
+                }
+            ]
+        },
+        {
+            "provider": "GRG",
+            "sources": [
+                {
+                    "name": "FEMA NFHL - Flood Hazard Zones (WMS)",
+                    "minZoom": 5,
+                    "maxZoom": 19,
+                    "tileType": "PNG",
+                    "version": "1.3.0",
+                    "layers": "12",
+                    "url": "https://hazards.fema.gov:443/arcgis/services/public/NFHLWMS/MapServer/WMSServer?",
+                    "coordinatesystem": "EPSG:4326",
+                    "aditionalparameters": "&TRANSPARENT=TRUE&STYLES=default",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.7,
+                    "provider": "GRG",
+                    "sourceFile": "grg_FEMA_NFHL_Flood_Hazard_Zones.xml"
+                },
+                {
+                    "name": "GRG - Google Road Only Overlay",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=h&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.6,
+                    "provider": "GRG",
+                    "sourceFile": "grg_google_road_only_overlay.xml"
+                },
+                {
+                    "name": "GRG - Google Terrain Shading Overlay",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=t&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.6,
+                    "provider": "GRG",
+                    "sourceFile": "grg_google_terrain_shading_overlay.xml"
+                },
+                {
+                    "name": "GRG - USDA Fstopo Overlay",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_FSTopo_01/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.6,
+                    "provider": "GRG",
+                    "sourceFile": "grg_usda_fstopo_overlay.xml"
+                },
+                {
+                    "name": "GRG - WaymarkedTrails Cycle Routes Overlay",
+                    "minZoom": 0,
+                    "maxZoom": 18,
+                    "tileType": "png",
+                    "url": "https://tile.waymarkedtrails.org/cycling/{$z}/{$x}/{$y}.png",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.8,
+                    "provider": "GRG",
+                    "sourceFile": "grg_waymarkedtrails_cycle_routes_overlay.xml"
+                }
+            ]
+        },
+        {
+            "provider": "Google",
+            "sources": [
+                {
+                    "name": "Google - Hybrid",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=y&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_hybrid.xml"
+                },
+                {
+                    "name": "Google - Roadmap Alt",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=r&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_roadmap_alt.xml"
+                },
+                {
+                    "name": "Google - Roadmap No Poi",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=m&x={$x}&y={$y}&z={$z}&s=Gal&apistyle=s.t%3A2%7Cs.e%3Al%7Cp.v%3Aoff",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_roadmap_no_poi.xml"
+                },
+                {
+                    "name": "Google - Roadmap Standard",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=m&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_roadmap_standard.xml"
+                },
+                {
+                    "name": "Google - Satellite Only",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=s&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_satellite_only.xml"
+                },
+                {
+                    "name": "Google - Terrain",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://mt1.google.com/vt/lyrs=p&x={$x}&y={$y}&z={$z}",
+                    "backgroundColor": "#000000",
+                    "provider": "Google",
+                    "sourceFile": "google_terrain.xml"
+                }
+            ]
+        },
+        {
+            "provider": "NAIP",
+            "sources": [
+                {
+                    "name": "NAIP \u2013 USDA CONUS Prime",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "url": "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{$z}/{$y}/{$x}",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "NAIP",
+                    "sourceFile": "NAIP_USDA_ConusPrime.xml"
+                },
+                {
+                    "name": "NAIP \u2013 USGS National Map",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/tile/{$z}/{$y}/{$x}",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "NAIP",
+                    "sourceFile": "NAIP_USGS_TNM.xml"
+                }
+            ]
+        },
+        {
+            "provider": "NationalLandSurveyOfFinland",
+            "sources": [
+                {
+                    "name": "National Land Survey of Finland - MML",
+                    "tileType": "jpg",
+                    "url": "https://tiles.kartat.kapsi.fi/peruskartta/{$z}/{$x}/{$y}.jpg",
+                    "minZoom": 2,
+                    "maxZoom": 19,
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "NationalLandSurveyOfFinland",
+                    "sourceFile": "nationallandsurveyoffinland_mml.xml"
+                }
+            ]
+        },
+        {
+            "provider": "NaturalResourcesCanada",
+            "sources": [
+                {
+                    "name": "Canada Base Map \u2013 Transportation",
+                    "version": "1.1.1",
+                    "minZoom": 0,
+                    "maxZoom": 23,
+                    "tileType": "jpg",
+                    "url": "https://maps.geogratis.gc.ca/wms/CBMT?",
+                    "coordinatesystem": "EPSG:3857",
+                    "layers": "CBMT",
+                    "styles": "",
+                    "backgroundColor": "#000000",
+                    "provider": "NaturalResourcesCanada",
+                    "sourceFile": "naturalresourcescanada_cbmt.xml"
+                },
+                {
+                    "name": "Canada - Toporama",
+                    "version": "1.1.1",
+                    "minZoom": 0,
+                    "maxZoom": 23,
+                    "tileType": "jpg",
+                    "url": "https://maps.geogratis.gc.ca/wms/toporama_en?",
+                    "coordinatesystem": "EPSG:3857",
+                    "layers": "WMS-Toporama",
+                    "provider": "NaturalResourcesCanada",
+                    "sourceFile": "naturalresourcescanada_toporama.xml"
+                }
+            ]
+        },
+        {
+            "provider": "Poland",
+            "sources": [
+                {
+                    "name": "PL Ortofoto Std (WMTS EPSG3857)",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "JPG",
+                    "tileUpdate": "None",
+                    "url": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMTS/StandardResolution?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTOFOTOMAPA&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX={$z}&TILEROW={$y}&TILECOL={$x}&FORMAT=image/jpeg",
+                    "backgroundColor": "#000000",
+                    "provider": "Poland",
+                    "sourceFile": "PL_Geoportal_Ortofoto_Standard_EPSG3857.xml"
+                }
+            ]
+        },
+        {
+            "provider": "cycleosm",
+            "sources": [
+                {
+                    "name": "CycleOSM - OSM Cycle",
+                    "minZoom": 0,
+                    "maxZoom": 21,
+                    "tileType": "png",
+                    "url": "https://a.tile-cyclosm.openstreetmap.fr/cyclosm/{$z}/{$x}/{$y}.png",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "cycleosm",
+                    "sourceFile": "cycleosm_osm_cycle.xml"
+                }
+            ]
+        },
+        {
+            "provider": "michelin",
+            "sources": [
+                {
+                    "name": "Michelin - OSM Michelin",
+                    "minZoom": 0,
+                    "maxZoom": 19,
+                    "url": "https://map{$serverpart}.viamichelin.com/map/mapdirect?map=viamichelin&z={$z}&x={$x}&y={$y}&format=png&version=201901161110&layer=background&locale=default&cs=1&protocol=https",
+                    "serverParts": "1 2 3 4",
+                    "provider": "michelin",
+                    "sourceFile": "michelin_osm_michelin.xml"
+                }
+            ]
+        },
+        {
+            "provider": "mtbmapcz",
+            "sources": [
+                {
+                    "name": "MTBMap.cz - MTB Map Europe",
+                    "minZoom": 0,
+                    "maxZoom": 21,
+                    "tileType": "png",
+                    "url": "http://tile.mtbmap.cz/mtbmap_tiles/{$z}/{$x}/{$y}.png",
+                    "tileUpdate": "None",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "",
+                    "provider": "mtbmapcz",
+                    "sourceFile": "mtbmapcz_mtb_map_europe.xml"
+                }
+            ]
+        },
+        {
+            "provider": "openseamap",
+            "sources": [
+                {
+                    "name": "OpenSeaMap - Seamarks",
+                    "minZoom": 0,
+                    "maxZoom": 18,
+                    "tileType": "png",
+                    "url": "https://t1.openseamap.org/seamark/{$z}/{$x}/{$y}.png",
+                    "coordinateSystem": "EPSG:3857",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": false,
+                    "serverParts": "t1,t2,t3",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.85,
+                    "provider": "openseamap",
+                    "sourceFile": "openseamap_seamarks.xml"
+                }
+            ]
+        },
+        {
+            "provider": "RainViewer",
+            "sources": [
+                {
+                    "name": "Rain/Precipitation",
+                    "minZoom": 0,
+                    "maxZoom": 7,
+                    "tileType": "png",
+                    "url": "",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.6,
+                    "weatherOverlayId": "radar",
+                    "provider": "RainViewer",
+                    "sourceFile": "rainviewer_radar.json"
+                },
+                {
+                    "name": "Clouds/Satellite",
+                    "minZoom": 0,
+                    "maxZoom": 7,
+                    "tileType": "png",
+                    "url": "",
+                    "backgroundColor": "#000000",
+                    "isOverlay": true,
+                    "overlayOpacity": 0.5,
+                    "weatherOverlayId": "clouds",
+                    "provider": "RainViewer",
+                    "sourceFile": "rainviewer_clouds.json"
+                }
+            ]
+        },
+        {
+            "provider": "opentopo",
+            "sources": [
+                {
+                    "name": "OpenTopo - Opentopomap",
+                    "minZoom": 1,
+                    "maxZoom": 17,
+                    "tileType": "png",
+                    "tileUpdate": "IfNoneMatch",
+                    "serverParts": "a b c",
+                    "url": "https://{$serverpart}.tile.opentopomap.org/{$z}/{$x}/{$y}.png",
+                    "provider": "opentopo",
+                    "sourceFile": "opentopo_opentopomap.xml"
+                }
+            ]
+        },
+        {
+            "provider": "usgs",
+            "sources": [
+                {
+                    "name": "USGS - Usgsbasemap",
+                    "minZoom": 0,
+                    "maxZoom": 15,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://basemap.nationalmap.gov/ArcGIS/rest/services/USGSTopo/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "usgs",
+                    "sourceFile": "usgs_usgsbasemap.xml"
+                },
+                {
+                    "name": "USGS - Usgsimageryonly",
+                    "minZoom": 0,
+                    "maxZoom": 15,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://basemap.nationalmap.gov/ArcGIS/rest/services/USGSImageryOnly/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "usgs",
+                    "sourceFile": "usgs_usgsimageryonly.xml"
+                },
+                {
+                    "name": "USGS - Usgsimagerytopo",
+                    "minZoom": 0,
+                    "maxZoom": 15,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://basemap.nationalmap.gov/ArcGIS/rest/services/USGSImageryTopo/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "usgs",
+                    "sourceFile": "usgs_usgsimagerytopo.xml"
+                },
+                {
+                    "name": "USGS - Usgsshadedrelief",
+                    "minZoom": 0,
+                    "maxZoom": 15,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#000000",
+                    "provider": "usgs",
+                    "sourceFile": "usgs_usgsshadedrelief.xml"
+                }
+            ]
+        },
+        {
+            "provider": "OpenStreetMap",
+            "sources": [
+                {
+                    "name": "OpenStreetMap - Standard",
+                    "minZoom": 0,
+                    "maxZoom": 19,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://tile.openstreetmap.org/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#000000",
+                    "provider": "OpenStreetMap",
+                    "sourceFile": "bms_osm.json"
+                },
+                {
+                    "name": "OpenStreetMap - Local Render",
+                    "minZoom": 0,
+                    "maxZoom": 19,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://127.0.0.1:8081/tile/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#F2EFE9",
+                    "provider": "OpenStreetMap",
+                    "sourceFile": "bms_osm_local_render.json"
+                }
+            ]
+        },
+        {
+            "provider": "CartoDB",
+            "sources": [
+                {
+                    "name": "CartoDB - Dark Matter",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#000000",
+                    "serverParts": "a,b,c,d",
+                    "provider": "CartoDB",
+                    "sourceFile": "bms_carto_dark.json"
+                },
+                {
+                    "name": "CartoDB - Positron (Light)",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#FFFFFF",
+                    "serverParts": "a,b,c,d",
+                    "provider": "CartoDB",
+                    "sourceFile": "bms_carto_light.json"
+                }
+            ]
+        },
+        {
+            "provider": "Copernicus",
+            "sources": [
+                {
+                    "name": "Sentinel-2 L2A - True Color",
+                    "minZoom": 7,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "processApiUrl": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "evalscript": "//VERSION=3\nfunction setup(){return{input:[\"B02\",\"B03\",\"B04\"],output:{bands:3}}}\nfunction evaluatePixel(s){return[2.5*s.B04,2.5*s.B03,2.5*s.B02]}",
+                    "dataType": "sentinel-2-l2a",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": true,
+                    "provider": "Copernicus",
+                    "sourceFile": "sentinel2_l2a.json",
+                    "coordinateSystem": "EPSG:4326",
+                    "authType": "oauth2_client_credentials",
+                    "oauth2TokenUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+                    "oauth2ClientIdEnvVar": "CDSE_CLIENT_ID",
+                    "oauth2ClientSecretEnvVar": "CDSE_CLIENT_SECRET",
+                    "oauth2Scope": "openid",
+                    "rateLimitPerSecond": 2
+                },
+                {
+                    "name": "Sentinel-2 L2A - False Color (Vegetation)",
+                    "minZoom": 7,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "processApiUrl": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "evalscript": "//VERSION=3\nfunction setup(){return{input:[\"B03\",\"B04\",\"B08\"],output:{bands:3}}}\nfunction evaluatePixel(s){return[2.5*s.B08,2.5*s.B04,2.5*s.B03]}",
+                    "dataType": "sentinel-2-l2a",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": true,
+                    "provider": "Copernicus",
+                    "sourceFile": "sentinel2_l2a_false_color.json",
+                    "coordinateSystem": "EPSG:4326",
+                    "authType": "oauth2_client_credentials",
+                    "oauth2TokenUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+                    "oauth2ClientIdEnvVar": "CDSE_CLIENT_ID",
+                    "oauth2ClientSecretEnvVar": "CDSE_CLIENT_SECRET",
+                    "oauth2Scope": "openid",
+                    "rateLimitPerSecond": 2
+                },
+                {
+                    "name": "Sentinel-2 L2A - SWIR",
+                    "minZoom": 7,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "processApiUrl": "https://sh.dataspace.copernicus.eu/api/v1/process",
+                    "evalscript": "//VERSION=3\nfunction setup(){return{input:[\"B04\",\"B8A\",\"B12\"],output:{bands:3}}}\nfunction evaluatePixel(s){return[2.5*s.B12,2.5*s.B8A,2.5*s.B04]}",
+                    "dataType": "sentinel-2-l2a",
+                    "backgroundColor": "#000000",
+                    "ignoreErrors": true,
+                    "provider": "Copernicus",
+                    "sourceFile": "sentinel2_l2a_swir.json",
+                    "coordinateSystem": "EPSG:4326",
+                    "authType": "oauth2_client_credentials",
+                    "oauth2TokenUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+                    "oauth2ClientIdEnvVar": "CDSE_CLIENT_ID",
+                    "oauth2ClientSecretEnvVar": "CDSE_CLIENT_SECRET",
+                    "oauth2Scope": "openid",
+                    "rateLimitPerSecond": 2
+                }
+            ]
+        },
+        {
+            "provider": "GeoscienceAustralia",
+            "sources": [
+                {
+                    "name": "GA - National Base Map",
+                    "minZoom": 0,
+                    "maxZoom": 16,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "https://services.ga.gov.au/gis/rest/services/NationalBaseMap/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#F2F0EB",
+                    "provider": "GeoscienceAustralia",
+                    "sourceFile": "ga_national_basemap.xml"
+                },
+                {
+                    "name": "GA - Topographic",
+                    "minZoom": 0,
+                    "maxZoom": 16,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "https://services.ga.gov.au/gis/rest/services/Topographic_Base_Map/MapServer/tile/{$z}/{$y}/{$x}",
+                    "backgroundColor": "#F5F3EE",
+                    "provider": "GeoscienceAustralia",
+                    "sourceFile": "ga_topographic.xml"
+                }
+            ]
+        },
+        {
+            "provider": "LocalTileServer",
+            "sources": [
+                {
+                    "name": "Local - OpenStreetMap",
+                    "minZoom": 0,
+                    "maxZoom": 19,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/openstreetmap-openstreetmap---standard/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#E8E0D8",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_osm.xml"
+                },
+                {
+                    "name": "Local - ESRI World Imagery",
+                    "minZoom": 0,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/esri-esri---world-imagery/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_esri_imagery.xml"
+                },
+                {
+                    "name": "Local - Esri Clarity",
+                    "minZoom": 1,
+                    "maxZoom": 17,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/esri-esri---clarity/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_esri_clarity.xml"
+                },
+                {
+                    "name": "Local - Google Hybrid",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/google-google---hybrid/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_google_hybrid.xml"
+                },
+                {
+                    "name": "Local - Google Satellite",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/google-google---satellite-only/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_google_satellite.xml"
+                },
+                {
+                    "name": "Local - CartoDB Dark",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/cartodb-cartodb---dark-matter/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#2C2C2C",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_cartodb_dark.xml"
+                },
+                {
+                    "name": "Local - OpenTopoMap",
+                    "minZoom": 1,
+                    "maxZoom": 17,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/opentopo-opentopo---opentopomap/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#F2EFE9",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_opentopo.xml"
+                },
+                {
+                    "name": "Local - Sentinel-2 True Color",
+                    "minZoom": 0,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/copernicus-sentinel-2-l2a---true-color/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_sentinel2_truecolor.xml"
+                },
+                {
+                    "name": "Local - Sentinel-2 False Color",
+                    "minZoom": 0,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/copernicus-sentinel-2-l2a---false-color-(vegetation)/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_sentinel2_falsecolor.xml"
+                },
+                {
+                    "name": "Local - Sentinel-2 SWIR",
+                    "minZoom": 0,
+                    "maxZoom": 14,
+                    "tileType": "png",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/copernicus-sentinel-2-l2a---swir/{$z}/{$x}/{$y}.png",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_sentinel2_swir.xml"
+                },
+                {
+                    "name": "Local - Bing Satellite",
+                    "minZoom": 0,
+                    "maxZoom": 20,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/bing-bing---satellite/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_bing_satellite.xml"
+                },
+                {
+                    "name": "Local - GA National Base Map",
+                    "minZoom": 0,
+                    "maxZoom": 16,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/geoscienceaustralia-ga---national-base-map/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#F2F0EB",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_ga_basemap.xml"
+                },
+                {
+                    "name": "Local - GA Topographic",
+                    "minZoom": 0,
+                    "maxZoom": 16,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/geoscienceaustralia-ga---topographic/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#F5F3EE",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_ga_topo.xml"
+                },
+                {
+                    "name": "Local - GA Satellite Imagery",
+                    "minZoom": 0,
+                    "maxZoom": 16,
+                    "tileType": "jpg",
+                    "tileUpdate": "None",
+                    "url": "http://localhost:8070/tiles/geoscienceaustralia-ga---satellite-imagery/{$z}/{$x}/{$y}.jpg",
+                    "backgroundColor": "#000000",
+                    "provider": "LocalTileServer",
+                    "sourceFile": "local_ga_satellite.xml"
+                }
+            ]
+        }
+    ],
+    "weatherOverlays": [
+        {
+            "id": "radar",
+            "name": "Rain/Precipitation",
+            "apiUrl": "https://api.rainviewer.com/public/weather-maps.json",
+            "tileUrlPattern": "{host}{path}/512/{z}/{x}/{y}/2/1_1.png",
+            "dataPath": "radar.past",
+            "updateIntervalMs": 600000,
+            "opacity": 0.6,
+            "minZoom": 0,
+            "maxZoom": 7,
+            "enabled": true
+        },
+        {
+            "id": "clouds",
+            "name": "Clouds/Satellite",
+            "apiUrl": "https://api.rainviewer.com/public/weather-maps.json",
+            "tileUrlPattern": "{host}{path}/512/{z}/{x}/{y}/0/0_0.png",
+            "dataPath": "satellite.infrared",
+            "updateIntervalMs": 600000,
+            "opacity": 0.5,
+            "minZoom": 0,
+            "maxZoom": 7,
+            "enabled": true
+        },
+        {
+            "id": "bom-radar",
+            "name": "BOM Radar (Australia)",
+            "tileUrlPattern": "https://tilecache.rainviewer.com/v2/radar/{timestamp}/512/{z}/{x}/{y}/2/1_1.png",
+            "apiUrl": "https://api.rainviewer.com/public/weather-maps.json",
+            "dataPath": "radar.past",
+            "updateIntervalMs": 360000,
+            "opacity": 0.7,
+            "minZoom": 0,
+            "maxZoom": 10,
+            "enabled": true,
+            "region": "AU"
+        }
+    ],
+    "version": "1.8.0",
+    "description": "ATAK Map Sources converted to JSON with weather overlays, Australian sources, and local tile server"
+}
