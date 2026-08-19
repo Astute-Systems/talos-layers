@@ -8,6 +8,7 @@
       "longitude": 153.15,
       "heading": 45,
       "speed": 0.0001,
+      "altitude": 35,
       "sidc": "SFGPUCI--------",
       "symbolSet": "Ground",
       "affiliation": "Friend"
@@ -19,6 +20,7 @@
       "longitude": 152.97,
       "heading": 90,
       "speed": 0.0002,
+      "altitude": 28,
       "sidc": "SFGPUCA--------",
       "symbolSet": "Ground",
       "affiliation": "Friend"
@@ -30,6 +32,7 @@
       "longitude": 152.85,
       "heading": 30,
       "speed": 0.0003,
+      "altitude": 45,
       "sidc": "SHGPUCM--------",
       "symbolSet": "Ground",
       "affiliation": "Hostile"
@@ -41,6 +44,7 @@
       "longitude": 153.10,
       "heading": 270,
       "speed": 0.0002,
+      "altitude": 22,
       "sidc": "SNGPUCR--------",
       "symbolSet": "Ground",
       "affiliation": "Neutral"
@@ -52,6 +56,7 @@
       "longitude": 152.90,
       "heading": 180,
       "speed": 0.0001,
+      "altitude": 18,
       "sidc": "SUGPU----------",
       "symbolSet": "Ground",
       "affiliation": "Unknown"
@@ -63,6 +68,7 @@
       "longitude": 153.05,
       "heading": 0,
       "speed": 0,
+      "altitude": 30,
       "sidc": "SFGPUCF--------",
       "symbolSet": "Ground",
       "affiliation": "Friend"
@@ -74,6 +80,7 @@
       "longitude": 152.95,
       "heading": 315,
       "speed": 0.0001,
+      "altitude": 40,
       "sidc": "SHGPUCD--------",
       "symbolSet": "Ground",
       "affiliation": "Hostile"
@@ -85,6 +92,7 @@
       "longitude": 153.20,
       "heading": 60,
       "speed": 0.0001,
+      "altitude": 25,
       "sidc": "SFGPUCE--------",
       "symbolSet": "Ground",
       "affiliation": "Friend"
@@ -96,6 +104,7 @@
       "longitude": 153.03,
       "heading": 0,
       "speed": 0,
+      "altitude": 27,
       "sidc": "SFGPUH---------",
       "symbolSet": "Ground",
       "affiliation": "Friend"
@@ -107,6 +116,7 @@
       "longitude": 153.08,
       "heading": 225,
       "speed": 0.0004,
+      "altitude": 33,
       "sidc": "SHGPUCS--------",
       "symbolSet": "Ground",
       "affiliation": "Hostile"
@@ -118,6 +128,7 @@
       "longitude": 153.13,
       "heading": 270,
       "speed": 0.002,
+      "altitude": 11000,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -129,6 +140,7 @@
       "longitude": 153.02,
       "heading": 45,
       "speed": 0.001,
+      "altitude": 300,
       "sidc": "SNAPMH---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -140,6 +152,7 @@
       "longitude": 153.08,
       "heading": 180,
       "speed": 0.0005,
+      "altitude": 250,
       "sidc": "SNAPMH---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -151,6 +164,7 @@
       "longitude": 153.00,
       "heading": 90,
       "speed": 0.0003,
+      "altitude": 1500,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -162,6 +176,7 @@
       "longitude": 153.12,
       "heading": 315,
       "speed": 0.0004,
+      "altitude": 400,
       "sidc": "SNAPMH---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -173,6 +188,7 @@
       "longitude": 153.30,
       "heading": 200,
       "speed": 0.005,
+      "altitude": 8000,
       "sidc": "SHAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Hostile"
@@ -184,6 +200,7 @@
       "longitude": 152.80,
       "heading": 80,
       "speed": 0.004,
+      "altitude": 9000,
       "sidc": "SFAPMH---------",
       "symbolSet": "Air",
       "affiliation": "Friend"
@@ -195,6 +212,7 @@
       "longitude": 153.15,
       "heading": 160,
       "speed": 0.003,
+      "altitude": 6000,
       "sidc": "SUAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Unknown"
@@ -206,6 +224,7 @@
       "longitude": 152.75,
       "heading": 90,
       "speed": 0.002,
+      "altitude": 8500,
       "sidc": "SFAPMFK--------",
       "symbolSet": "Air",
       "affiliation": "Friend"
@@ -217,6 +236,7 @@
       "longitude": 153.18,
       "heading": 300,
       "speed": 0.001,
+      "altitude": 1800,
       "sidc": "SNAPMH---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -228,6 +248,7 @@
       "longitude": 153.11,
       "heading": 90,
       "speed": 0.003,
+      "altitude": 10700,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -239,6 +260,7 @@
       "longitude": 153.22,
       "heading": 270,
       "speed": 0.0035,
+      "altitude": 10400,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -250,6 +272,7 @@
       "longitude": 152.88,
       "heading": 45,
       "speed": 0.0028,
+      "altitude": 10100,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -261,6 +284,7 @@
       "longitude": 153.05,
       "heading": 180,
       "speed": 0.004,
+      "altitude": 11300,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -272,6 +296,7 @@
       "longitude": 153.25,
       "heading": 315,
       "speed": 0.0032,
+      "altitude": 11600,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -283,6 +308,7 @@
       "longitude": 152.92,
       "heading": 120,
       "speed": 0.0025,
+      "altitude": 10900,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -294,6 +320,7 @@
       "longitude": 153.38,
       "heading": 225,
       "speed": 0.003,
+      "altitude": 11100,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -305,6 +332,7 @@
       "longitude": 153.42,
       "heading": 290,
       "speed": 0.0038,
+      "altitude": 10600,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -316,6 +344,7 @@
       "longitude": 152.78,
       "heading": 60,
       "speed": 0.0022,
+      "altitude": 10800,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -327,6 +356,7 @@
       "longitude": 153.32,
       "heading": 200,
       "speed": 0.0042,
+      "altitude": 11000,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -338,6 +368,7 @@
       "longitude": 152.65,
       "heading": 85,
       "speed": 0.0018,
+      "altitude": 10500,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -349,6 +380,7 @@
       "longitude": 153.55,
       "heading": 250,
       "speed": 0.0028,
+      "altitude": 11200,
       "sidc": "SNAPMF---------",
       "symbolSet": "Air",
       "affiliation": "Neutral"
@@ -360,6 +392,7 @@
       "longitude": 153.35,
       "heading": 180,
       "speed": 0.0008,
+      "altitude": 0,
       "sidc": "SFSPCLDD-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Friend"
@@ -371,6 +404,7 @@
       "longitude": 153.40,
       "heading": 225,
       "speed": 0.0006,
+      "altitude": 0,
       "sidc": "SFSPCLFF-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Friend"
@@ -382,6 +416,7 @@
       "longitude": 153.50,
       "heading": 200,
       "speed": 0.001,
+      "altitude": 0,
       "sidc": "SHSPCLCC-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Hostile"
@@ -393,6 +428,7 @@
       "longitude": 153.45,
       "heading": 270,
       "speed": 0.0004,
+      "altitude": 0,
       "sidc": "SNSPNF---------",
       "symbolSet": "SeaSurface",
       "affiliation": "Neutral"
@@ -404,6 +440,7 @@
       "longitude": 153.30,
       "heading": 45,
       "speed": 0.0002,
+      "altitude": 0,
       "sidc": "SNSPNF---------",
       "symbolSet": "SeaSurface",
       "affiliation": "Neutral"
@@ -415,6 +452,7 @@
       "longitude": 153.55,
       "heading": 240,
       "speed": 0.0005,
+      "altitude": 0,
       "sidc": "SUSPCL---------",
       "symbolSet": "SeaSurface",
       "affiliation": "Unknown"
@@ -426,6 +464,7 @@
       "longitude": 153.25,
       "heading": 90,
       "speed": 0.001,
+      "altitude": 0,
       "sidc": "SFSPCLFF-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Friend"
@@ -437,6 +476,7 @@
       "longitude": 153.60,
       "heading": 180,
       "speed": 0.0007,
+      "altitude": 0,
       "sidc": "SHSPCLDD-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Hostile"
@@ -448,6 +488,7 @@
       "longitude": 153.35,
       "heading": 135,
       "speed": 0.0003,
+      "altitude": 0,
       "sidc": "SNSPNF---------",
       "symbolSet": "SeaSurface",
       "affiliation": "Neutral"
@@ -459,6 +500,7 @@
       "longitude": 153.70,
       "heading": 270,
       "speed": 0.0005,
+      "altitude": 0,
       "sidc": "SFSPCLDD-------",
       "symbolSet": "SeaSurface",
       "affiliation": "Friend"
