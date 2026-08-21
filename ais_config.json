@@ -1,0 +1,9 @@
+{
+    "apiKey": "f02e72bffed46969d1deaefa78cecb0afff70aca",
+    "useCurrentLocation": true,
+    "centerLat": 48.9714,
+    "centerLon": 2.5254,
+    "radiusNm": 200.0,
+    "navalOnly": false,
+    "description": "AISStream.io API configuration. useCurrentLocation=true prefers the device's live GPS fix over centerLat/centerLon for a portable, region-independent default; centerLat/centerLon (English Channel, North Sea and Bay of Biscay approaches) are used as the fallback when no GPS fix is available."
+}

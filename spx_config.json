@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$comment": "Example SPX RADAR connector configuration for Cambridge Pixel integration",
+    "connectorId": "spx",
+    "enabled": true,
+    "autoStart": false,
+    "settings": {
+        "multicastAddress": "239.192.50.79",
+        "port": 5079,
+        "interface": "",
+        "staleTimeoutSec": 30,
+        "calculateLatLon": true
+    }
+}

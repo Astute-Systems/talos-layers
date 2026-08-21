@@ -26,15 +26,15 @@
       "pollInterval": 0
     },
     "gtfs": {
-      "sourcesFile": "gtfs_sources_aus.json",
+      "sourcesFile": "gtfs_sources.json",
       "enabled": false
     },
     "ais": {
-      "configFile": "ais_config_aus.json",
+      "configFile": "ais_config.json",
       "enabled": false
     },
     "adsb": {
-      "configFile": "adsb_config_aus.json",
+      "configFile": "adsb_config.json",
       "enabled": false
     },
     "cot": {

@@ -1,0 +1,9 @@
+{
+    "clientId": "",
+    "clientSecret": "",
+    "centerLat": 48.9714,
+    "centerLon": 2.5254,
+    "radiusKm": 370.0,
+    "intervalSeconds": 10,
+    "description": "OpenSky Network API configuration — 200nm radius covers France, Benelux, southern UK and northern Spain"
+}

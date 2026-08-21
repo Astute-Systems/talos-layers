@@ -1,0 +1,52 @@
+{
+    "description": "SAPIENT connector configuration for BMS application",
+    "note": "Configure connection to SAPIENT Data Fusion Node or run as server for sensor connections",
+    "connectors": [
+        {
+            "id": "sapient-dfn",
+            "type": "sapient",
+            "enabled": false,
+            "config": {
+                "mode": "client",
+                "host": "127.0.0.1",
+                "port": 8080,
+                "nodeId": "",
+                "defaultAffiliation": "unknown",
+                "staleTimeout": 300,
+                "reconnectInterval": 5
+            }
+        },
+        {
+            "id": "sapient-server",
+            "type": "sapient",
+            "enabled": false,
+            "config": {
+                "mode": "server",
+                "host": "0.0.0.0",
+                "port": 8080,
+                "nodeId": "",
+                "defaultAffiliation": "unknown",
+                "staleTimeout": 300
+            }
+        }
+    ],
+    "affiliationMap": {
+        "description": "Map sensor classifications to affiliations based on context",
+        "rules": [
+            {
+                "classification": "friendly-vehicle",
+                "affiliation": "friend"
+            },
+            {
+                "classification": "hostile-drone",
+                "affiliation": "hostile"
+            }
+        ]
+    },
+    "notes": {
+        "protobufSupport": "Full protobuf parsing requires building with SAPIENT proto files. Without them, the connector operates in simplified mode with limited message parsing.",
+        "messageFormat": "SAPIENT messages use a 4-byte network-order length prefix followed by protobuf-encoded SapientMessage (BSI Flex 335 v2.0)",
+        "detectionReports": "Detection reports are converted to map symbols based on classification type and default affiliation setting",
+        "coordinateSystems": "Supports LAT_LNG_DEG_M coordinates. Range/bearing coordinates require sensor position for conversion."
+    }
+}
