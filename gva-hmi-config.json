@@ -1,0 +1,695 @@
+{
+    "description": "GVA HMI Configuration",
+    "version": "1.0",
+    "system": {
+        "defaultLatitude": -27.470,
+        "defaultLongitude": 153.021,
+        "locale": "en_AU",
+        "units": "metric",
+        "theme": "defstan",
+        "ddsDomain": 0,
+        "maintPin": "1234"
+    },
+    "display": {
+        "brightness": 100,
+        "nightModeEnabled": false,
+        "statusBarVisible": true,
+        "crosshairVisible": true
+    },
+    "systemServices": {
+        "enabled": true,
+        "description": "GVA system services monitoring",
+        "services": [
+            {
+                "id": "gva-registry",
+                "displayName": "Registry",
+                "description": "GVA Registry service for device registration"
+            },
+            {
+                "id": "gva-alarms",
+                "displayName": "Alarms",
+                "description": "GVA Alarms service for system notifications"
+            },
+            {
+                "id": "gva-uacm",
+                "displayName": "UACM",
+                "description": "User Access Control & Management service"
+            },
+            {
+                "id": "gva-gateway-j1939",
+                "displayName": "J1939 Gateway",
+                "description": "J1939 vehicle data gateway"
+            },
+            {
+                "id": "gva-tile-server",
+                "displayName": "Tile Server",
+                "description": "Map tile server for offline map support"
+            },
+            {
+                "id": "gva-web-dashboard",
+                "displayName": "Web Dashboard",
+                "description": "GVA web-based dashboard service"
+            },
+            {
+                "id": "ollama",
+                "displayName": "Ollama",
+                "description": "Ollama LLM service for AI chat integration"
+            }
+        ]
+    },
+    "radar": {
+        "minRangeMetres": 2000,
+        "maxRangeMetres": 10000,
+        "wheelMinZoomMetres": 100,
+        "defaultMapType": "satellite",
+        "satelliteTileUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        "topoTileUrl": "https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}",
+        "streetTileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "rangeRingCount": 5,
+        "showRangeLabels": true,
+        "cameraFovAngle": 60.0,
+        "cameraViewDistance": 5000.0,
+        "cameraFovNarrowDefault": true,
+        "cameraInnerRadius": 30.0
+    },
+    "tileServer": {
+        "useLocalServer": true,
+        "localServerUrl": "http://localhost:8070",
+        "localServerEnabled": true,
+        "fallbackToOnline": false,
+        "onlineSatelliteTileUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        "onlineTopoTileUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+    },
+    "themes": {
+        "defstan": {
+            "name": "DEF STAN 23-009",
+            "fillStyle": "flat",
+            "cornerRadius": 6.0,
+            "ppiStyle": "classicArrowWithSight",
+            "fonts": {
+                "monospaceFamily": "Courier New",
+                "keyFamily": "Courier New",
+                "keySize": 12,
+                "keyWeight": 75,
+                "toggleFamily": "Courier New",
+                "toggleSize": 9,
+                "toggleWeight": 75,
+                "dataFamily": "Courier New",
+                "dataSize": 12,
+                "dataWeight": 50
+            },
+            "keys": {
+                "available": {
+                    "bgStart": "#008000",
+                    "bgEnd": "#008000",
+                    "text": "#FFFFFF",
+                    "border": "#000000",
+                    "borderWidth": 1.0,
+                    "opacity": 1.0
+                },
+                "selected": {
+                    "bgStart": "#008000",
+                    "bgEnd": "#008000",
+                    "text": "#FFFFFF",
+                    "border": "#FFFF00",
+                    "borderWidth": 3.0,
+                    "opacity": 1.0
+                },
+                "unavailable": {
+                    "bgStart": "#808080",
+                    "bgEnd": "#808080",
+                    "text": "#FFFFFF",
+                    "border": "#000000",
+                    "borderWidth": 1.0,
+                    "opacity": 1.0
+                }
+            },
+            "statusBar": {
+                "available": "#008000",
+                "selected": "#008000",
+                "unavailable": "#808080"
+            },
+            "infoBar": {
+                "background": "#282828",
+                "border": "#505050",
+                "textNormal": "#00FF00",
+                "textWarning": "#FF0000",
+                "textCaution": "#FFBF00",
+                "textAdvisory": "#00FFFF"
+            },
+            "scene": {
+                "background": "#0a0a14",
+                "panelBackground": "#1c1c1e",
+                "separator": "#2a2a3c",
+                "selectionHighlight": "rgba(0,255,255,60)"
+            },
+            "toggle": {
+                "trackOn": "#008000",
+                "trackOff": "#000000",
+                "knob": "#FFFF00",
+                "textActive": "#000000",
+                "textInactive": "#FFFFFF"
+            },
+            "widgets": {
+                "background": "#002800",
+                "border": "#008000",
+                "borderWidth": 2.0,
+                "header": "#003c00",
+                "text": "#FFFFFF",
+                "grid": "#003c00",
+                "alternateRow": "#003000",
+                "selection": "rgba(0,200,255,100)",
+                "separatorBackground": "#003c28",
+                "separatorText": "#80FF80",
+                "cornerRadius": 8.0,
+                "fontFamily": "Courier New",
+                "fontSize": 10,
+                "fontWeight": 50
+            }
+        },
+        "blue": {
+            "name": "Astute Blue",
+            "fillStyle": "linearGradientV",
+            "cornerRadius": 8.0,
+            "ppiStyle": "modernTankWithSight",
+            "fonts": {
+                "monospaceFamily": "DejaVu Sans Mono",
+                "keyFamily": "DejaVu Sans Mono",
+                "keySize": 12,
+                "keyWeight": 75,
+                "toggleFamily": "DejaVu Sans Mono",
+                "toggleSize": 9,
+                "toggleWeight": 75,
+                "dataFamily": "DejaVu Sans Mono",
+                "dataSize": 12,
+                "dataWeight": 50
+            },
+            "keys": {
+                "available": {
+                    "bgStart": "#013a6b",
+                    "bgEnd": "#012141",
+                    "text": "#FFFFFF",
+                    "border": "#0072FF",
+                    "borderWidth": 1.0,
+                    "opacity": 0.95
+                },
+                "selected": {
+                    "bgStart": "#014f8a",
+                    "bgEnd": "#012d55",
+                    "text": "#FFFFFF",
+                    "border": "#00FFFF",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                },
+                "unavailable": {
+                    "bgStart": "#2c2c3e",
+                    "bgEnd": "#1a1a2e",
+                    "text": "#808080",
+                    "border": "#1a1a2e",
+                    "borderWidth": 1.0,
+                    "opacity": 0.7
+                }
+            },
+            "statusBar": {
+                "available": "#0072FF",
+                "selected": "#00FFFF",
+                "unavailable": "#555555"
+            },
+            "infoBar": {
+                "background": "#0a0a14",
+                "border": "#1a1a2e",
+                "textNormal": "#00FFFF",
+                "textWarning": "#c62828",
+                "textCaution": "#f57c00",
+                "textAdvisory": "#00FFFF"
+            },
+            "scene": {
+                "background": "#0a0a14",
+                "panelBackground": "#012141",
+                "separator": "#1a1a2e",
+                "selectionHighlight": "rgba(0,255,255,60)"
+            },
+            "toggle": {
+                "trackOn": "#0072FF",
+                "trackOff": "#2c2c3e",
+                "knob": "#00FFFF",
+                "textActive": "#000000",
+                "textInactive": "#808080"
+            },
+            "widgets": {
+                "background": "#0a1428",
+                "border": "#0072FF",
+                "borderWidth": 1.0,
+                "header": "#1e2837",
+                "text": "#dcdcdc",
+                "grid": "#1a2a3c",
+                "alternateRow": "#0d1a30",
+                "selection": "rgba(0,255,255,80)",
+                "separatorBackground": "#162040",
+                "separatorText": "#00FFFF",
+                "cornerRadius": 8.0,
+                "fontFamily": "DejaVu Sans Mono",
+                "fontSize": 10,
+                "fontWeight": 50
+            }
+        },
+        "android": {
+            "name": "Android Dark",
+            "fillStyle": "flat",
+            "cornerRadius": 20.0,
+            "ppiStyle": "modernTankWithSight",
+            "fonts": {
+                "monospaceFamily": "DejaVu Sans Mono",
+                "keyFamily": "Roboto",
+                "keySize": 13,
+                "keyWeight": 57,
+                "toggleFamily": "Roboto",
+                "toggleSize": 10,
+                "toggleWeight": 75,
+                "dataFamily": "DejaVu Sans Mono",
+                "dataSize": 12,
+                "dataWeight": 50
+            },
+            "keys": {
+                "available": {
+                    "bgStart": "#2d2d2d",
+                    "bgEnd": "#2d2d2d",
+                    "text": "#e0e0e0",
+                    "border": "#3d3d3d",
+                    "borderWidth": 1.0,
+                    "opacity": 0.95
+                },
+                "selected": {
+                    "bgStart": "#004d40",
+                    "bgEnd": "#004d40",
+                    "text": "#FFFFFF",
+                    "border": "#00bfa5",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                },
+                "unavailable": {
+                    "bgStart": "#1c1c1e",
+                    "bgEnd": "#1c1c1e",
+                    "text": "#5c5c5c",
+                    "border": "#2c2c2c",
+                    "borderWidth": 1.0,
+                    "opacity": 0.5
+                }
+            },
+            "statusBar": {
+                "available": "#00bfa5",
+                "selected": "#1de9b6",
+                "unavailable": "#424242"
+            },
+            "infoBar": {
+                "background": "#1c1b1f",
+                "border": "#2c2b2f",
+                "textNormal": "#e6e1e5",
+                "textWarning": "#f2b8b5",
+                "textCaution": "#ffa726",
+                "textAdvisory": "#80cbc4"
+            },
+            "scene": {
+                "background": "#121212",
+                "panelBackground": "#1e1e1e",
+                "separator": "#2c2c2c",
+                "selectionHighlight": "rgba(0,191,165,40)"
+            },
+            "toggle": {
+                "trackOn": "#34a853",
+                "trackOff": "#49454f",
+                "knob": "#FFFFFF",
+                "textActive": "#000000",
+                "textInactive": "#c0c0c0"
+            },
+            "widgets": {
+                "background": "#1e1e1e",
+                "border": "#2c2c2c",
+                "borderWidth": 1.0,
+                "header": "#2d2d2d",
+                "text": "#e0e0e0",
+                "grid": "#2c2c2c",
+                "alternateRow": "#252525",
+                "selection": "rgba(0,191,165,60)",
+                "separatorBackground": "#353535",
+                "separatorText": "#00BFA5",
+                "cornerRadius": 12.0,
+                "fontFamily": "Roboto",
+                "fontSize": 11,
+                "fontWeight": 50
+            }
+        },
+        "high-contrast": {
+            "name": "High Contrast",
+            "fillStyle": "flat",
+            "cornerRadius": 4.0,
+            "ppiStyle": "classicArrowWithSight",
+            "fonts": {
+                "monospaceFamily": "Courier New",
+                "keyFamily": "Courier New",
+                "keySize": 14,
+                "keyWeight": 75,
+                "toggleFamily": "Courier New",
+                "toggleSize": 10,
+                "toggleWeight": 75,
+                "dataFamily": "Courier New",
+                "dataSize": 14,
+                "dataWeight": 75
+            },
+            "keys": {
+                "available": {
+                    "bgStart": "#000000",
+                    "bgEnd": "#000000",
+                    "text": "#FFFFFF",
+                    "border": "#FFFFFF",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                },
+                "selected": {
+                    "bgStart": "#000000",
+                    "bgEnd": "#000000",
+                    "text": "#FFFF00",
+                    "border": "#FFFF00",
+                    "borderWidth": 3.0,
+                    "opacity": 1.0
+                },
+                "unavailable": {
+                    "bgStart": "#000000",
+                    "bgEnd": "#000000",
+                    "text": "#AAAAAA",
+                    "border": "#666666",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                }
+            },
+            "statusBar": {
+                "available": "#FFFFFF",
+                "selected": "#FFFF00",
+                "unavailable": "#666666"
+            },
+            "infoBar": {
+                "background": "#000000",
+                "border": "#FFFFFF",
+                "textNormal": "#FFFFFF",
+                "textWarning": "#FF4444",
+                "textCaution": "#FFFF00",
+                "textAdvisory": "#44FFFF"
+            },
+            "scene": {
+                "background": "#000000",
+                "panelBackground": "#000000",
+                "separator": "#333333",
+                "selectionHighlight": "rgba(255,255,0,80)"
+            },
+            "toggle": {
+                "trackOn": "#FFFFFF",
+                "trackOff": "#333333",
+                "knob": "#FFFF00",
+                "textActive": "#FFFFFF",
+                "textInactive": "#AAAAAA"
+            },
+            "widgets": {
+                "background": "#000000",
+                "border": "#FFFFFF",
+                "borderWidth": 2.0,
+                "header": "#1a1a1a",
+                "text": "#FFFFFF",
+                "grid": "#333333",
+                "alternateRow": "#0a0a0a",
+                "selection": "rgba(255,255,0,80)",
+                "separatorBackground": "#2a2a00",
+                "separatorText": "#FFFF00",
+                "cornerRadius": 4.0,
+                "fontFamily": "Courier New",
+                "fontSize": 11,
+                "fontWeight": 75
+            }
+        },
+        "high-contrast-light": {
+            "name": "High Contrast Light",
+            "fillStyle": "flat",
+            "cornerRadius": 4.0,
+            "ppiStyle": "simple",
+            "fonts": {
+                "monospaceFamily": "Courier New",
+                "keyFamily": "Courier New",
+                "keySize": 14,
+                "keyWeight": 75,
+                "toggleFamily": "Courier New",
+                "toggleSize": 10,
+                "toggleWeight": 75,
+                "dataFamily": "Courier New",
+                "dataSize": 14,
+                "dataWeight": 75
+            },
+            "keys": {
+                "available": {
+                    "bgStart": "#FFFFFF",
+                    "bgEnd": "#FFFFFF",
+                    "text": "#000000",
+                    "border": "#000000",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                },
+                "selected": {
+                    "bgStart": "#FFFF00",
+                    "bgEnd": "#FFFF00",
+                    "text": "#000000",
+                    "border": "#0000CC",
+                    "borderWidth": 3.0,
+                    "opacity": 1.0
+                },
+                "unavailable": {
+                    "bgStart": "#CCCCCC",
+                    "bgEnd": "#CCCCCC",
+                    "text": "#666666",
+                    "border": "#999999",
+                    "borderWidth": 2.0,
+                    "opacity": 1.0
+                }
+            },
+            "statusBar": {
+                "available": "#000000",
+                "selected": "#0000CC",
+                "unavailable": "#999999"
+            },
+            "infoBar": {
+                "background": "#FFFFFF",
+                "border": "#000000",
+                "textNormal": "#000000",
+                "textWarning": "#CC0000",
+                "textCaution": "#CC8800",
+                "textAdvisory": "#006666"
+            },
+            "scene": {
+                "background": "#FFFFFF",
+                "panelBackground": "#F0F0F0",
+                "separator": "#CCCCCC",
+                "selectionHighlight": "rgba(0,0,204,60)"
+            },
+            "toggle": {
+                "trackOn": "#000000",
+                "trackOff": "#CCCCCC",
+                "knob": "#0000CC",
+                "textActive": "#000000",
+                "textInactive": "#666666"
+            },
+            "widgets": {
+                "background": "#FFFFFF",
+                "border": "#000000",
+                "borderWidth": 2.0,
+                "header": "#E0E0E0",
+                "text": "#000000",
+                "grid": "#CCCCCC",
+                "alternateRow": "#F5F5F5",
+                "selection": "rgba(0,0,204,60)",
+                "separatorBackground": "#C0C0C0",
+                "separatorText": "#000080",
+                "cornerRadius": 4.0,
+                "fontFamily": "Courier New",
+                "fontSize": 11,
+                "fontWeight": 75
+            }
+        }
+    },
+    "cameras": [
+        {
+            "dayStream": "RWS",
+            "bearing": 30,
+            "fov": 40,
+            "ppiVisible": false,
+            "labels": {
+                "en": "Weapon",
+                "fr": "Arme",
+                "de": "Waffe",
+                "it": "Arma",
+                "es": "Arma",
+                "pl": "Broń",
+                "uk": "Зброя",
+                "fi": "Ase",
+                "sv": "Vapen",
+                "nl": "Wapen",
+                "nb": "Våpen",
+                "el": "Όπλο",
+                "tr": "Silah",
+                "cs": "Zbraň",
+                "ar": "سلاح"
+            },
+            "button": 1
+        },
+        {
+            "dayStream": "LSAS-Day-1",
+            "nightStream": "LSAS-Night-1",
+            "bearing": 0,
+            "fov": 60,
+            "labels": {
+                "en": "Front",
+                "fr": "Avant",
+                "de": "Vorne",
+                "it": "Davanti",
+                "es": "Frente",
+                "pl": "Przód",
+                "uk": "Перед",
+                "fi": "Etu",
+                "sv": "Fram",
+                "nl": "Voor",
+                "nb": "Foran",
+                "el": "Εμπρός",
+                "tr": "Ön",
+                "cs": "Přední",
+                "ar": "أمام"
+            },
+            "button": 7,
+            "stripPosition": 0,
+            "quadPosition": 0
+        },
+        {
+            "dayStream": "LSAS-Day-2",
+            "nightStream": "LSAS-Night-2",
+            "bearing": 60,
+            "fov": 60,
+            "labels": {
+                "en": "Frt-Rgt",
+                "fr": "Av-Drt",
+                "de": "Vor-Rts",
+                "it": "Dav-Dst",
+                "es": "Del-Der",
+                "pl": "Prz-Pra",
+                "uk": "Пер-Пра",
+                "fi": "Etu-Oik",
+                "sv": "Frm-Hgr",
+                "nl": "Vr-Rts",
+                "nb": "Fr-Hyr",
+                "el": "Εμπ-Δεξ",
+                "tr": "Ön-Sağ",
+                "cs": "Př-Prv",
+                "ar": "أم-يمن"
+            },
+            "button": 8,
+            "stripPosition": 1,
+            "quadPosition": 1
+        },
+        {
+            "dayStream": "LSAS-Day-4",
+            "nightStream": "LSAS-Night-4",
+            "bearing": 180,
+            "fov": 60,
+            "labels": {
+                "en": "Rear",
+                "fr": "Arrière",
+                "de": "Hinten",
+                "it": "Dietro",
+                "es": "Trasera",
+                "pl": "Tył",
+                "uk": "Зад",
+                "fi": "Taka",
+                "sv": "Bak",
+                "nl": "Achter",
+                "nb": "Bak",
+                "el": "Πίσω",
+                "tr": "Arka",
+                "cs": "Zadní",
+                "ar": "خلف"
+            },
+            "button": 9,
+            "stripPosition": 3,
+            "quadPosition": 3
+        },
+        {
+            "dayStream": "LSAS-Day-3",
+            "nightStream": "LSAS-Night-3",
+            "bearing": 120,
+            "fov": 60,
+            "labels": {
+                "en": "Rr-Rgt",
+                "fr": "Ar-Drt",
+                "de": "Hnt-Rts",
+                "it": "Post-Dst",
+                "es": "Tra-Der",
+                "pl": "Tył-Pra",
+                "uk": "Зад-Пра",
+                "fi": "Taka-Oik",
+                "sv": "Bak-Hgr",
+                "nl": "Ach-Rts",
+                "nb": "Bk-Hyr",
+                "el": "Πίσ-Δεξ",
+                "tr": "Ark-Sağ",
+                "cs": "Zad-Prv",
+                "ar": "خ-يمن"
+            },
+            "button": 10,
+            "stripPosition": 2,
+            "quadPosition": 2
+        },
+        {
+            "dayStream": "LSAS-Day-5",
+            "nightStream": "LSAS-Night-5",
+            "bearing": 240,
+            "fov": 60,
+            "labels": {
+                "en": "Rr-Lft",
+                "fr": "Ar-Gch",
+                "de": "Hnt-Lnk",
+                "it": "Post-Sin",
+                "es": "Tra-Izq",
+                "pl": "Tył-Lew",
+                "uk": "Зад-Лів",
+                "fi": "Taka-Vas",
+                "sv": "Bak-Vnr",
+                "nl": "Ach-Lnk",
+                "nb": "Bk-Vns",
+                "el": "Πίσ-Αρι",
+                "tr": "Ark-Sol",
+                "cs": "Zad-Lvý",
+                "ar": "خ-يسر"
+            },
+            "button": 11,
+            "stripPosition": 4
+        },
+        {
+            "dayStream": "LSAS-Day-6",
+            "nightStream": "LSAS-Night-6",
+            "bearing": 300,
+            "fov": 60,
+            "labels": {
+                "en": "Frt-Lft",
+                "fr": "Av-Gch",
+                "de": "Vor-Lnk",
+                "it": "Dav-Sin",
+                "es": "Del-Izq",
+                "pl": "Prz-Lew",
+                "uk": "Пер-Лів",
+                "fi": "Etu-Vas",
+                "sv": "Frm-Vnr",
+                "nl": "Vr-Lnk",
+                "nb": "Fr-Vns",
+                "el": "Εμπ-Αρι",
+                "tr": "Ön-Sol",
+                "cs": "Př-Lvý",
+                "ar": "أم-يسر"
+            },
+            "button": 12,
+            "stripPosition": 5
+        }
+    ]
+}
