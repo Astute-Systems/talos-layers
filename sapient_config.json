@@ -7,13 +7,32 @@
             "type": "sapient",
             "enabled": false,
             "config": {
-                "mode": "client",
-                "host": "127.0.0.1",
-                "port": 8080,
+                "mode": "multicast",
+                "multicastAddress": "239.192.60.60",
+                "multicastPort": 18080,
                 "nodeId": "",
                 "defaultAffiliation": "unknown",
                 "staleTimeout": 300,
-                "reconnectInterval": 5
+                "reconnectInterval": 5,
+                "forceUnsetSidcIdentity": true,
+                "unsetSidcIdentity": "unknown",
+                "classificationSidcMap": {
+                    "vehicle": "SUGPUCA--------",
+                    "person": "SUGPUCI--------",
+                    "drone": "SUAPMHQ--------",
+                    "emitter": "SUGPUSM--------"
+                },
+                "sensorNameSidcMap": {
+                    "radar": "10031500002203000000",
+                    "lidar": "SFGPUCI--------",
+                    "camera": "10031500002201000000",
+                    "eo": "SFGP111200-----",
+                    "eo_cam": "SFGP111200-----",
+                    "acoustic": "10031500002202000000",
+                    "acoust": "10031500002202000000",
+                    "passive rf": "SFGPUSMV-------",
+                    "p_rf": "SFGPUSMV-------"
+                }
             }
         },
         {
