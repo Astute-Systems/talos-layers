@@ -1,9 +1,9 @@
 {
     "apiKey": "${AISSTREAM_TOKEN}",
     "useCurrentLocation": true,
-    "centerLat": -27.4698,
-    "centerLon": 153.0251,
+    "centerLat": 52.0433,
+    "centerLon": -0.5389,
     "radiusNm": 200.0,
     "navalOnly": false,
-    "description": "AISStream.io API configuration. useCurrentLocation=true prefers the device's live GPS fix over centerLat/centerLon for a portable, region-independent default; centerLat/centerLon (English Channel, North Sea and Bay of Biscay approaches) are used as the fallback when no GPS fix is available."
+    "description": "AISStream.io API configuration. useCurrentLocation=true prefers the device's live GPS fix over centerLat/centerLon for a portable, region-independent default; centerLat/centerLon (Millbrook Proving Ground, Bedford, UK — 200nm radius covers the English Channel, North Sea and Bay of Biscay approaches) are used as the fallback when no GPS fix is available."
 }

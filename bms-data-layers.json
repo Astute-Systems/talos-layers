@@ -1,85 +1,78 @@
 {
-  "basePath": "/usr/local/share/bms-data/",
-  "dataLayers": [
-    {
-      "layerName": "Australian Airports",
-      "layerType": "airports",
-      "file": "aviation/airports.csv",
-      "format": "csv",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 100,
-      "description": "Airport locations from OurAirports dataset"
-    },
-    {
-      "layerName": "Airport Frequencies",
-      "layerType": "frequencies",
-      "file": "aviation/airport-frequencies.csv",
-      "format": "csv",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 101,
-      "description": "Airport radio frequencies (loaded with airports)"
-    },
-    {
-      "layerName": "Australian Airspaces",
-      "layerType": "airspaces",
-      "file": "aviation/au_airspaces.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 50,
-      "description": "Australian controlled and restricted airspace boundaries"
-    },
-    {
-      "layerName": "Aviation Navaids",
-      "layerType": "navaids",
-      "file": "aviation/au_navaids.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 102,
-      "description": "Aviation navigational aids (VOR, NDB, DME)"
-    },
-    {
-      "layerName": "Australian Maritime Zones",
-      "layerType": "maritime_zones",
-      "file": "maritime/au_maritime_zones.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 40,
-      "description": "Australian maritime zone boundaries (territorial sea, EEZ)"
-    },
-    {
-      "layerName": "Australian Ports",
-      "layerType": "ports",
-      "file": "maritime/au_ports.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 103,
-      "description": "Australian port locations"
-    },
-    {
-      "layerName": "Maritime Navaids",
-      "layerType": "maritime_navaids",
-      "file": "maritime/au_navaids.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 104,
-      "description": "Maritime navigational aids (lighthouses, buoys, beacons)"
-    },
-    {
-      "layerName": "Shipping Lanes",
-      "layerType": "shipping_lanes",
-      "file": "maritime/au_shipping_lanes.geojson",
-      "format": "geojson",
-      "enabled": true,
-      "visible": true,
-      "zIndex": 45,
-      "description": "Australian coastal shipping lanes and traffic separation schemes"
-    }
-  ]
+    "description": "BMS data layers for Millbrook demo — UK & Ireland airports, airspaces, maritime zones, navaids.",
+    "location": "millbrook",
+    "version": "1.0.0",
+    "basePath": "",
+    "dataLayers": [
+        {
+            "layerName": "UK & Ireland Airports, Airfields & Helipads",
+            "layerType": "airports",
+            "file": "data/aviation/uk_airports.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 10,
+            "description": "UK and Ireland airports, regional fields, and helicopter pads with ATC frequencies"
+        },
+        {
+            "layerName": "UK & Ireland Airspaces",
+            "layerType": "airspaces",
+            "file": "data/aviation/uk_airspaces.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "UK and Ireland controlled airspace — CTR, TMA, Danger Areas"
+        },
+        {
+            "layerName": "UK & Ireland Maritime Zones",
+            "layerType": "maritime",
+            "file": "data/maritime/uk_maritime_zones.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 4,
+            "description": "UK and Ireland Exclusive Economic Zones from marineregions.org"
+        },
+        {
+            "layerName": "Shipping Lanes",
+            "layerType": "shipping_lanes",
+            "file": "data/maritime/uk_shipping_lanes.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 5,
+            "description": "Traffic Separation Schemes and shipping lanes from OpenSeaMap"
+        },
+        {
+            "layerName": "Ports",
+            "layerType": "ports",
+            "file": "data/maritime/uk_ports.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 13,
+            "description": "UK and Ireland ports from OpenStreetMap and NGA World Port Index"
+        },
+        {
+            "layerName": "Maritime Navigation Aids",
+            "layerType": "maritime_navaids",
+            "file": "data/maritime/uk_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 14,
+            "description": "Lighthouses, buoys and beacons from OpenSeaMap"
+        },
+        {
+            "layerName": "Navigation Aids",
+            "layerType": "navaids",
+            "file": "data/aviation/uk_navaids.geojson",
+            "format": "geojson",
+            "enabled": true,
+            "visible": true,
+            "zIndex": 12,
+            "description": "UK and Ireland VOR, NDB, DME and other navigation aids"
+        }
+    ]
 }

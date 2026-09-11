@@ -2,9 +2,9 @@
     "description": "GVA HMI Configuration",
     "version": "1.0",
     "system": {
-        "defaultLatitude": -27.470,
-        "defaultLongitude": 153.021,
-        "locale": "en_AU",
+        "defaultLatitude": 52.0433,
+        "defaultLongitude": -0.5389,
+        "locale": "en_GB",
         "units": "metric",
         "theme": "defstan",
         "ddsDomain": 0,

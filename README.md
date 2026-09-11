@@ -10,6 +10,7 @@ Use the **GitHub → Sync Layers** panel inside GVA BMS to download and apply a 
 | Branch | Location | Centre |
 |--------|----------|--------|
 | `london` | Farnborough, UK | 51.2777° N, 0.7761° W |
+| `millbrook` | Millbrook Proving Ground (UTAC), Bedford, UK | 52.0433° N, 0.5389° W |
 | `paris` | CDG Airport, France | 49.0097° N, 2.5479° E |
 | `brisbane` | Fortitude Valley, QLD, AU | 27.4568° S, 153.0357° E |
 | `perth` | Perth CBD, WA, AU | 31.9505° S, 115.8605° E |

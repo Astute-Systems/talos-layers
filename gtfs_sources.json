@@ -1,211 +1,233 @@
 {
-  "sources": [
-    {
-      "id": "seq-buses",
-      "name": "SEQ Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Bus",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "seq-trains",
-      "name": "SEQ Trains",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Rail",
-      "token": "",
-      "vehicleType": "train",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "seq-trams",
-      "name": "SEQ Trams",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Tram",
-      "token": "",
-      "vehicleType": "tram",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "seq-ferries",
-      "name": "SEQ Ferries",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/VehiclePositions/Ferry",
-      "token": "",
-      "vehicleType": "ferry",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "cairns-buses",
-      "name": "Cairns Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/VehiclePositions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsi-buses",
-      "name": "North Stradbroke Island Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/NSI/VehiclePositions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "mhb-buses",
-      "name": "Maryborough Hervey Bay Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/MHB/VehiclePositions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "bowen-buses",
-      "name": "Bowen Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/BOW/VehiclePositions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "innisfail-buses",
-      "name": "Innisfail Buses",
-      "url": "https://gtfsrt.api.translink.com.au/api/realtime/INN/VehiclePositions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-buses",
-      "name": "NSW Sydney Buses",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/buses",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-ferries",
-      "name": "NSW Sydney Ferries",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/ferries/sydneyferries",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "ferry",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-cbd-lightrail",
-      "name": "NSW CBD & South East Light Rail",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/cbdandsoutheast",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "lightrail",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-innerwest-lightrail",
-      "name": "NSW Inner West Light Rail",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/innerwest",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "lightrail",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-newcastle-lightrail",
-      "name": "NSW Newcastle Light Rail",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/newcastle",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "lightrail",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-parramatta-lightrail",
-      "name": "NSW Parramatta Light Rail",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/lightrail/parramatta",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "lightrail",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-sydney-trains",
-      "name": "NSW Sydney Trains",
-      "url": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/sydneytrains",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "train",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-metro",
-      "name": "NSW Sydney Metro Trains",
-      "url": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/metro",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "train",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-trains",
-      "name": "NSW Trains",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/nswtrains",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "train",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-centralwest-buses",
-      "name": "Central West Orana Buses",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/centralwestandorana",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-newengland-buses",
-      "name": "New England North West Buses",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/newenglandnorthwest",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "nsw-northcoast-buses",
-      "name": "North Coast Buses",
-      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/regionbuses/northcoast",
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJRZmp3RmR4djk0UWlHNkNmemk4blJKVFR5bms5Y1U5N0prWml6Z3VzenBJIiwiaWF0IjoxNzM3NDU0ODkxfQ.vlzNXvYb8MGZhRYQJnhkF3s16maDQSPw2kCrnXUA0PU",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "act-lightrail",
-      "name": "ACT Light Rail",
-      "url": "http://files.transport.act.gov.au/feeds/lightrail.pb",
-      "token": "",
-      "vehicleType": "lightrail",
-      "intervalSeconds": 30,
-      "enabled": true
-    },
-    {
-      "id": "adelaide-buses",
-      "name": "Adelaide Buses",
-      "url": "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions",
-      "token": "",
-      "vehicleType": "bus",
-      "intervalSeconds": 30,
-      "enabled": true
+    "description": "UK Public Transit GTFS Real-Time Data Sources",
+    "version": "1.0",
+    "sources": [
+        {
+            "id": "tfl-buses",
+            "name": "TfL London Buses",
+            "url": "https://api.tfl.gov.uk/vehicle/activeInstances",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 10,
+            "enabled": true,
+            "provider": "Transport for London",
+            "coverage": "Greater London",
+            "dataFormat": "REST API"
+        },
+        {
+            "id": "tfl-underground",
+            "name": "TfL London Underground",
+            "url": "https://api.tfl.gov.uk/vehicle/activeInstances",
+            "token": "",
+            "vehicleType": "subway",
+            "intervalSeconds": 15,
+            "enabled": true,
+            "provider": "Transport for London",
+            "coverage": "Greater London",
+            "dataFormat": "REST API"
+        },
+        {
+            "id": "tfl-dlr",
+            "name": "TfL Docklands Light Railway",
+            "url": "https://api.tfl.gov.uk/vehicle/activeInstances",
+            "token": "",
+            "vehicleType": "tram",
+            "intervalSeconds": 10,
+            "enabled": true,
+            "provider": "Transport for London",
+            "coverage": "East London",
+            "dataFormat": "REST API"
+        },
+        {
+            "id": "tfl-tram",
+            "name": "TfL London Tram",
+            "url": "https://api.tfl.gov.uk/vehicle/activeInstances",
+            "token": "",
+            "vehicleType": "tram",
+            "intervalSeconds": 10,
+            "enabled": true,
+            "provider": "Transport for London",
+            "coverage": "South London (Croydon)",
+            "dataFormat": "REST API"
+        },
+        {
+            "id": "traveline-scotland",
+            "name": "Traveline Scotland Buses",
+            "url": "https://www.travelinescotland.com/lts/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Traveline Scotland",
+            "coverage": "Scotland",
+            "dataFormat": "GTFS Static Feed",
+            "note": "GTFS data available for most Scottish operators"
+        },
+        {
+            "id": "network-west-midlands",
+            "name": "Network West Midlands Buses",
+            "url": "https://www.networkwm.co.uk/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Network West Midlands",
+            "coverage": "West Midlands region",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "stagecoach-buses",
+            "name": "Stagecoach Buses",
+            "url": "https://www.stagecoachbus.com/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Stagecoach",
+            "coverage": "UK-wide (multiple regions)",
+            "dataFormat": "GTFS Static Feed / Live Tracking",
+            "note": "Largest bus operator in UK, multiple regional feeds available"
+        },
+        {
+            "id": "arriva-buses",
+            "name": "Arriva Buses",
+            "url": "https://www.arrivabus.co.uk/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Arriva",
+            "coverage": "UK-wide (multiple regions)",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "go-ahead-buses",
+            "name": "Go-Ahead Buses",
+            "url": "https://www.goaheadbus.com/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Go-Ahead",
+            "coverage": "UK-wide (south/southeast)",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "northern-rail",
+            "name": "Northern Rail Trains",
+            "url": "https://www.northernrailway.co.uk/",
+            "token": "",
+            "vehicleType": "train",
+            "intervalSeconds": 20,
+            "enabled": true,
+            "provider": "Northern Railway",
+            "coverage": "North of England",
+            "dataFormat": "GTFS Static Feed",
+            "note": "Rail operator for Northeast and Northwest England"
+        },
+        {
+            "id": "transpennine-express",
+            "name": "TransPennine Express Trains",
+            "url": "https://www.tpexpress.co.uk/",
+            "token": "",
+            "vehicleType": "train",
+            "intervalSeconds": 20,
+            "enabled": true,
+            "provider": "TransPennine Express",
+            "coverage": "North of England, Scotland",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "great-western-railway",
+            "name": "Great Western Railway Trains",
+            "url": "https://www.gwr.com/",
+            "token": "",
+            "vehicleType": "train",
+            "intervalSeconds": 20,
+            "enabled": true,
+            "provider": "Great Western Railway",
+            "coverage": "Southwest England, Wales",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "south-western-railway",
+            "name": "South Western Railway Trains",
+            "url": "https://www.southwesternrailway.com/",
+            "token": "",
+            "vehicleType": "train",
+            "intervalSeconds": 20,
+            "enabled": true,
+            "provider": "South Western Railway",
+            "coverage": "South England",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "national-express",
+            "name": "National Express Coaches",
+            "url": "https://www.nationalexpress.com/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "National Express",
+            "coverage": "UK-wide coach services",
+            "dataFormat": "Website API / Static Data",
+            "note": "Long-distance coach operator"
+        },
+        {
+            "id": "megabus-coaches",
+            "name": "Megabus Coaches",
+            "url": "https://uk.megabus.com/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Megabus",
+            "coverage": "UK-wide budget coach services",
+            "dataFormat": "Website API"
+        },
+        {
+            "id": "tfwm-metro",
+            "name": "West Midlands Metro (Light Rail)",
+            "url": "https://www.tfwm.org/travelwise/metro/",
+            "token": "",
+            "vehicleType": "tram",
+            "intervalSeconds": 15,
+            "enabled": true,
+            "provider": "Transport for West Midlands",
+            "coverage": "West Midlands",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "merseytravel",
+            "name": "Merseyrail Trains",
+            "url": "https://www.merseyrail.org/",
+            "token": "",
+            "vehicleType": "train",
+            "intervalSeconds": 20,
+            "enabled": true,
+            "provider": "Merseyravel",
+            "coverage": "Merseyside region",
+            "dataFormat": "GTFS Static Feed"
+        },
+        {
+            "id": "strathclyde-partnership",
+            "name": "Strathclyde Partnership Transit",
+            "url": "https://www.spt.co.uk/",
+            "token": "",
+            "vehicleType": "bus",
+            "intervalSeconds": 30,
+            "enabled": true,
+            "provider": "Strathclyde Partnership Transport",
+            "coverage": "Glasgow and Central Scotland",
+            "dataFormat": "GTFS Static Feed"
+        }
+    ],
+    "metadata": {
+        "country": "UK",
+        "note": "UK transit operators provide GTFS data through various channels. Most operators publish static GTFS feeds. Real-time (GTFS-RT) data availability varies by operator.",
+        "staticFeedsRepository": "https://transitfeeds.com/feeds?country=GB",
+        "tflApiDocs": "https://api.tfl.gov.uk/",
+        "updateFrequency": "Daily"
     }
-  ]
 }

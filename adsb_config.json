@@ -1,9 +1,9 @@
 {
     "clientId": "${OPENSKY_CLIENT_ID}",
     "clientSecret": "${OPENSKY_CLIENT_SECRET}",
-    "centerLat": -27.4698,
-    "centerLon": 153.0251,
+    "centerLat": 52.0433,
+    "centerLon": -0.5389,
     "radiusKm": 200.0,
     "intervalSeconds": 10,
-    "description": "OpenSky Network API configuration \u2014 200nm radius covers France, Benelux, southern UK and northern Spain"
+    "description": "OpenSky Network API configuration — 200nm radius covers Millbrook Proving Ground (UTAC), Bedford, and southern England, France and Benelux"
 }
